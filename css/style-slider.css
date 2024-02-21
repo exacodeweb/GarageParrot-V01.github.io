@@ -1,0 +1,406 @@
+/*--================================================== PAGE GALERIE ================================================--*/
+/*== SLIDER RANGES V.2 ==*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c, code valide: oui
+*/
+
+/**,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  background-color: #3264fe !important;
+  background: #d9777f;
+  place-items: center;
+}*/
+
+.content-slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: center;
+}
+/*
+#content-slide {
+  margin: 0px 5px 0px 5px;
+} 
+*/
+#content-slide {
+  position: relative;
+  width: 290px !important; /*95vmin*/
+  background-color: #ffffff;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+
+  height: 110px; /*190px*/
+  background-color: #ffffff !important;
+  border: 1px solid rgb(94, 91, 91);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; /*sorce: https://getcssscan.com/css-box-shadow-examples*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px 0px 5px;
+}
+
+/*----------------------------------------------------------------------Test*/
+#content-slide-2 {
+  position: relative;
+  width: 290px !important; /*95vmin*/
+  background-color: #ffffff;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+
+  height: 110px; /*190px*/
+  background-color: #ffffff !important;
+  border: 1px solid rgb(94, 91, 91);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; /*sorce: https://getcssscan.com/css-box-shadow-examples*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px 0px 5px;
+}
+/*----------------------------------------------------------------------Test*/
+#content-slide-3 {
+  position: relative;
+  width: 290px !important; /*95vmin*/
+  background-color: #ffffff;
+  padding: 40px 40px 40px 40px;
+  border-radius: 10px;
+
+  height: 110px; /*190px*/
+  background-color: #ffffff !important;
+  border: 1px solid rgb(94, 91, 91);
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; /*sorce: https://getcssscan.com/css-box-shadow-examples*/
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px 0px 5px;
+}
+/*---------------------------------------------------------------------------*/
+.form-slide {
+  margin-bottom: 0px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 110px;
+  width: 270px;
+  padding: 5px;
+}
+
+.form-slide-2,
+.form-slide-3 {
+  margin-bottom: 0px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 110px;
+  width: 270px;
+  padding: 5px;
+}
+
+.title-slide {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0px;
+  vertical-align: top;
+}
+
+.wrapper-slide {
+  position: relative;
+  width: 100%;
+  height: 50px; /*100px*/
+  margin-top: 0px; /*30px*/
+}
+/*POUR POSITIONE LES RONDS*/
+.input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent; /*POUR LA COULEUR BARRE DE PROGRESSION SUPERPOSE*/
+  pointer-events: none;
+  /*background-color: red;*/
+  background-color: rgba(0, 128, 0, 0.2);
+  background-color: rgba(199, 199, 199, 0.2);
+  background-color: rgba(217, 120, 128, 0.2);
+}
+/*POUR DIMENSIONE L'ENSEMBLE DU SLIDE*/
+.slider-track {
+  width: 100%; /*100%*/
+  height: 3px; /*5px*/ /*POUR LA HAUTEUR DE LA BARRE */
+  position: absolute; /*absolute*/
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  /*background-color: red;*/
+}
+
+/*POUR DIMENSIONE L'ENSEMBLE DU SLIDE*/ /*<<<<Test<<<<*/
+.slider-track2 {
+  width: 100%; /*100%*/
+  height: 3px; /*5px*/ /*POUR LA HAUTEUR DE LA BARRE */
+  position: absolute; /*absolute*/
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  /*background-color: red;*/
+}
+
+/*POUR DIMENSIONE L'ENSEMBLE DU SLIDE*/ /*<<<<Test<<<<*/
+.slider-track3 {
+  width: 100%; /*100%*/
+  height: 3px; /*5px*/ /*POUR LA HAUTEUR DE LA BARRE */
+  position: absolute; /*absolute*/
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  /*background-color: red;*/
+}
+
+/*POUR CENTRE LES RONDS SUR LA BARRE */
+.input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 5px; /*POUR CENTRE LES RONDS SUR LA BARRE */
+  /*z-index: 1; /* POUR METRE EN AVANT LES DEUX RONDS SUR LA BARRE */
+}
+
+.input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 15px;
+}
+
+.input[type="range"]::-ms-track {
+  appearance: none;
+  height: 5px;
+}
+
+/*POUR PARAMETRE LES RONDS*/
+.input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 0.8em; /*1.7em*/ /* POUR LA TAILLE DES RONDS */
+  width: 0.8em; /*1.7em*/ /* POUR LA TAILLE DES RONDS */
+  background-color: #d97880; /*#3264fe*/
+  cursor: pointer;
+  margin-top: -4px; /*-9*/ /*POUR CENTRE LES ROND SUR LA BARRE PAR RAPPORT AU DIAMETRE*/
+  pointer-events: auto;
+  border-radius: 50%;
+  /*z-index: 1;*/
+}
+/*DESACTIVER POUR VOIR*/ /*
+input[type="range"]::-moz-range-thumb {
+  /*-webkit-appearance: none;*/ /*
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em; /*1.7em*/ /*
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #3264fe;
+  pointer-events: auto;
+}*/
+
+/*DESACTIVER POUR VOIR*/ /*
+input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #3264fe;
+  pointer-events: auto;
+}*/
+/*pour la couleur des rond*/
+.input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #ffffff; /**/
+  border: 3px solid #3264fe;
+
+  /*z-index: 1;*/
+}
+/*DESACTIVER POUR VOIR - DIMENSION ETIQUETTE*/ /*
+.values {
+  background-color: #3264fe;
+  width: 32%;
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+}*/
+
+/*
+.values:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 15px solid #3264fe;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  margin: auto;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+}*/
+
+
+/*------------------- BOUTON REINITIALISE DE SLIDER -----------------*/ /* DESACTIVER POUR TEST
+
+.button-slideOne > .input {
+  /*.button-slideOne*/     /*
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90;
+  height: 20;
+  border-radius: 50px 50px;
+}
+
+.button-slideOne {
+  /*.button-slideOne*/   /*
+  border: none !important;
+}
+/*-------------------------------------------------------*/ /*desactiver pour test  
+.button-slider2 {
+  /*border-radius: 5px;*/   /*
+  border: 1px solid rgb(94, 91, 91);
+  background-color: white;
+  color: black;
+  border-radius: 50px 50px;
+  padding: 0px;
+  font-size: 10px;
+  /**/   /*
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 16px;
+}
+/*---------------------------------------------------Test*/  /* DESACTIVER A REMETRE *//*
+.button-slider3 {
+  /*border-radius: 5px;*/  /*
+  border: 1px solid rgb(94, 91, 91);
+  background-color: white;
+  color: black;
+  border-radius: 50px 50px;
+  padding: 0px;
+  font-size: 10px;
+  /**/  /*
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 16px;
+}
+/*---------------------------------------------------*/  /*  DESACTIVER POUR TEST
+.input[type="reset"],
+.input[type="submit"] {
+  height: 1rem;
+  width: 5rem;
+  padding: 0px;
+}
+
+.button-slider2:hover {
+  background-color: tomato; /*tomato*/  /*
+  color: white; /*white*/  /*
+  font-size: 10px;
+}
+/*--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<VALEUR NUMERIQUE ET BOUTON RESET<<*/
+.section-ui2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0px;
+  width: 100%;
+  align-items: center;
+
+  height: 20px;
+}
+
+.values {
+  font-size: 10px;
+}
+
+.section-ui2,/*.cursorTwo*/
+ .values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  /*font-size: 8px;*/
+}
+/*----------------------------------------------------------------------Test*/
+.section-ui3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 0px;
+  width: 100%;
+  align-items: center;
+
+  height: 20px;
+}
+
+.values {
+  font-size: 10px;
+}
+
+.section-ui3,/*.cursorTwo*/
+ .values {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  /*font-size: 8px;*/
+}

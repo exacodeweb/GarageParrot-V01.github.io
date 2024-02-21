@@ -1,0 +1,275 @@
+/*===================================================== PAGE FORM ====================================================*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c, code valide: oui
+*/
+
+/* Resolution d'ecran */
+/* Desktop > 1024px*/
+/* Tablette > 600 et 1024 < (mode portrait)*/
+/* Mobile > 320 et 600 < (mode portrait)*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 700px) {/*   and (min-width: 300px) 320px  576px*/
+  /* 576 px */
+  .main-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+
+@media screen and (max-width: 700px) {/*  and (min-width: 300px) 320px 576px*/
+  .article-1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/*------------------------------------------------------------------------------------------ ADRESSE ET  FORMULAIRE --*/
+
+@media screen and (max-width: 400px) {
+  /*.main-form,*/
+  .content-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }
+  /*BLOCK-A-GAUCHE*/
+  .section-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */
+    padding: 10px;
+  }
+  /*BLOCK-A-DROITE*/
+  .content-form-3 {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+}
+/*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .article-2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}*/
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------- BLOCK FORMMULAIRE --*/
+@media screen and (max-width: 700px) {/*  and (min-width: 300px)  320px  576px*/
+  /*
+  .content-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }*/
+
+  /*-------------------------------------------------------------------------------------------------- BLOCK ADRESS --*/
+/*
+  .block-adress-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche *//*
+    padding: 10px;
+  }*/
+/*
+  .coordonnees {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    height: 100%;
+    /*-------------------------------*//*
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /*background: lightcyan;*//*
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }*/
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*
+@media screen and (max-width: 700px) {
+  /* and (min-width: 320px)  *//*
+  .article-2 {
+    /*background: lightcyan;*//*
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /*280px*/
+    /*80px*//*
+    margin-bottom: 20px;
+  }
+}*/
+
+/*------------------------------------------------------------------------------------------------------------ FORM --*/
+/*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  /*
+  .block-form {
+    width: 100%;
+    /*90% rectifer a 100%*//*
+    margin-left: 0px;
+    /*20px*//*
+    padding: 0px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    /*background: lemonchiffon;*/                     /*
+    margin-bottom: 40px;
+
+    /**/
+    /*background-color: aqua;*/ /*
+    background-color: azure;
+    border: 1px solid grey;
+    border-radius: 5px;*/                    /*
+  }                                            *//*
+}
+*/
+/*--------------------------------------------------------- ligne 196 */
+
+@media screen /*and (min-width: 320px)*/ and (max-width: 700px) {
+  .content-adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }
+  /*BLOCK-A-GAUCHE*/
+  .section-form {/*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;*/
+    margin: 0px 0px 50px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */
+    padding: 10px;
+  }
+
+  .coordonnees {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    height: 100%;
+    /*-------------------------------*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /*background: lightcyan;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .article-2 {
+    /*background: lightcyan;*/
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /*280px*/
+    /*80px*/
+    margin-bottom: 20px;
+  }
+
+  /*BLOCK-A-DROITE*/
+  .content-form-3 {/*
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;*/
+    /*margin: 0px 20px 0px 20px;/*20px*/
+    margin: 0px 0px 0px 0px;/*20px*/
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .text {
+    width: 70%;
+  }
+  /*BLOCK-A-GAUCHE*/
+  .section-form {/*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;*/
+    margin: 0px 0px 25px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */
+    padding: 10px;
+  }
+
+  /*BLOCK-A-DROITE*/
+  .content-form-3 {/*
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;*/
+    /*margin: 0px 20px 0px 20px;/*20px*/
+    margin: 0px 20px 0px 20px;/*20px*/
+  }
+}

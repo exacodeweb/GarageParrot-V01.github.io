@@ -1,0 +1,545 @@
+/*================================================== TOPBAR ET NAVBAR ================================================*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c, code valide: oui
+*/
+
+/*-------------------------------------------------------------------------------------------------- IMAGES BANDEAU --*/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+.block-img {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  /*parametre: cover, fill*/
+ /* object-fit: cover;*/
+}
+
+.bandeau {
+  height: 350px;
+  width: 100%;
+  margin-top: 100px;
+}
+}
+
+
+
+/*----------------------------------------------------------------------------------------- CONTENT BANNIERE < 400PX--*/
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    /*overflow: hidden;*/
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------- TOPBAR < 400PX--*/
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .img-logo-1 {
+    height: 100%;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    /*opacity: 0.8;*/
+    background: transparent;
+  }
+}
+/*----------------------------------------------------------*/
+@media screen and (min-width: 701px) {
+  .icon-telephone,
+  .bi-envelope,
+  path {
+    height: 0.8em; /*12px*/ /*0.625vw*/
+    width: 0.8em; /*12px*/ /*0.625vw*/
+  }
+}
+
+@media screen /*and (min-width: 300px) */ and (max-width: 300px) {
+  .icon-telephone,
+  .bi-envelope,
+  path {
+    height: 0.6em; /*12px*/ /*0.625vw*/
+    width: 0.6em; /*12px*/ /*0.625vw*/
+  }
+}
+/*----------------------------------------------------------*/
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+
+  .icon-telephone, .bi-envelope, path {
+    height: 12px;
+    width: 12px;
+  }
+
+  .link-nav {
+    font-size: 0.7em;
+    width: 100%;
+  }
+
+   /*{
+    height: 10px;
+    width: 10px;
+  }*/
+  
+  .btn-group {
+    width: 100%;
+    padding: 0px;
+  }
+  /*
+  .topbar-container {
+    width: auto;
+  }*/
+  }
+
+  /*------------------------------------------------------------------------------------------------------------------*/
+  .btn-group {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .btn-tel,
+  .nav-link {
+    font-size: 16px;
+    /*font-weight: 600;*/
+  }
+ 
+  /*------------------------------------------------------------------------------------------------- NAVBAR < 400PX--*/ /*
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+  .navbar {
+    display: flex;
+   float: right; /**/                                                               /*
+    flex-direction: row;
+    align-items: center;
+    height: 70px;/*HAUTEUR DE LA NAVBAR*/ /*70px*/                                  /*
+  }             /*
+
+  .collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; /*POUR ALIGNE LA NAVBAR A DROITE  RIGHT OU LEFT*/                  /*
+    height: 50px;
+    width: auto;/*100%*/                                                                   /*
+    padding: 0px;
+    border: 1px solid orange;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+/*ul,*/                                                                           /*ul>.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  float: left !important;/*right*/                                             /*
+  justify-content: left;
+  /*width: 100%*/;/*100%*/                                                     /*
+  height: 50px;/*50px*/
+  /*align-items: right;/*a desactiver*/                                     /*
+  border: 2px solid green;
+}
+
+  .nav-item {
+    margin: 5px;
+    width: 160px;
+    font-size: 0.7em;
+  }
+
+/* BOUTON NAVBAR */                                                       /*
+.nav-link {
+  display: flex;
+  flex-direction: column; /*row*/                                          /*
+  align-items: center !important;
+  justify-content: center;
+  height: 34px !important;/*100%*/                                     /*
+  color: white !important;
+
+
+  width: 100%;/*250px*//*auto*/                                         /*
+  vertical-align: top;
+  margin-left: 20px;
+}
+}
+  }
+/*--------------------------------------------------------------------------------------------------- NAVBAR < 700PX--*/
+/*@media screen and (min-width: 320px) and (max-width: 700px) {*/                /*
+@media screen and (min-width: 401px) and (max-width: 700px) {
+/*----------------------------------------------------------
+  .link-nav {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  .btn-group {
+    width: 100%;
+    padding: 0px;
+  }---------------------------------------------------------*/
+/*
+  .btn-toggle {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    padding: 0px 10px 0px 10px;
+  }*/                                                                      /*
+}
+/*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  /*.link-nav:hover {
+        background: crimson;
+      }*/ /*
+}                                                                         */
+
+/*------------------------------------------------------------------------------------------------------------ MENU --*/
+/*@media screen and (min-width: 300px) and (max-width: 700px) {*/                             /*
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  /*
+  .navbar {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* background: #3533cd;*//*
+    height: 50px; /*50px*//*
+  } */
+                                                                   /*
+  .navbar {
+    /*display: flex;
+    /*float: left;*//*
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: left;*//*
+    width: 100%;
+    height: 50px;/*HAUTEUR DE LA NAVBAR*/ /*70px*//*
+    background: #d94350;/*#d97777*/                                             /*
+
+    display: flex;
+    /*float: right;*/                                                         /*
+    flex-direction: row;
+    align-items: center;
+    height: 50px;/*HAUTEUR DE LA NAVBAR*/ /*70px*/                                /*
+  }
+
+  .collapse {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: left; /*POUR ALIGNE LA NAVBAR A DROITE  RIGHT OU LEFT*/                      /*
+    height: 50px;
+    width: auto;/*100%*/                                                                           /*
+    padding: 0px;
+    border: 1px solid orange;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    /*ul,*/                                                                          /*.navbar-nav {/*
+      display: flex;
+      flex-direction: column;
+      float: left !important;/*right*//*
+      justify-content: left;
+      width: 100% !important;/*100%*//*
+      height: 50px;/*50px*/
+      /*align-items: right;/*a desactiver*//*
+    border: 2px solid green;*/
+
+                                                                                    /*
+  display: flex;
+  flex-direction: column;
+  /*float: left !important;/*right*/                                                    /*
+  justify-content: left;
+  /*width: 100%;*//*100%*/                                                                              /*              
+  height: 50px;/*50px*/
+  /*align-items: right;/*a desactiver*/                                                           /*
+  border: 2px solid green;
+
+
+
+    }
+    
+      .nav-item {
+        margin: 5px;
+        width: 160px;
+        font-size: 0.7em;
+      }
+    
+    /* BOUTON NAVBAR */                                                   /*
+    .nav-link {
+      display: flex;
+      flex-direction: column; /*row*/                                               /*
+      align-items: center !important;
+      justify-content: center;
+      height: 34px !important;/*100%*/                                                /*
+      color: white !important;
+      width: 100%;/*250px*//*auto*/                                                   /*
+      vertical-align: top;
+      margin-left: 20px;
+    }
+
+  .navbar-toggler {
+    /*margin: 0px 0px 0px 10px;*/                                                     /*
+    margin: 10px 0px 10px 0px;
+  }
+/*
+  .collapse {
+    height: 50px;/*70px*//*
+    width: 100%;*/                                                                /*
+  }
+
+  /*------------------------------------------------------------------------------------------------ OPTION TOGGLER --*/
+
+  /*@media screen and (min-width: 320px) and (max-width: 576px) {*//*
+  .navbar-toggler {
+    /* 2 */
+    /*margin-right: 20px;*/
+    /*margin: 10px 0px 10px 0px;*//*
+    margin: 10px 0px 10px 0px;
+    /* 10px-haut 0px-droite 10px-bas 10px-gauche */
+    /*border-color: #3533cd;*//*
+  }*/
+  /*}*/
+/*
+  .navbar-nav {
+    margin: auto;
+    width: 100%;
+    margin-top: 0px; /*80px*//*
+    height: 50px; /*70px*//*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< TEST<<<<<<<<<<<<<<<<<<*//*
+  }*/
+/*
+  .dropdown-menu,
+  .dropdown-item {
+    margin-left: 10px;
+  }
+/*
+  .nav-item {
+    margin: 5px;
+    width: 30%;
+    font-size: 1em;
+  }*/
+
+
+  /*
+  .nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1em;
+   
+  }*/
+
+                                                                  /*
+}
+/*--------------------------------------------------------------------------------------------------- NAVBAR < 900PX--*/
+/*@media screen and (min-width: 320px) and (max-width: 900px) {*/                        /*   
+  @media screen and (max-width: 900px) /*and (max-width: 900px) */       /*             {               
+
+    .navbar {
+      display: flex;
+      /*float: right;*/                                                               /*        
+      flex-direction: row;
+      align-items: center;
+      /*justify-content: left;*/                                                   /*   
+      width: 100%;
+      height: 50px;/*HAUTEUR DE LA NAVBAR*/ /*70px*/
+      /*background: linear-gradient(#d9777f, #5696df);*/
+      /*background: linear-gradient(#3533cd, #5696df);*/                               /*
+      background: #d94350;/*#d97777*/                                               /*  
+    }                                                                         
+  
+    .navbar {
+      height: auto; /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< TEST */                        /*
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      /*background: #3533cd;*/                                                                  /*
+      height: 50px;
+      width: auto;
+    } 
+  /*
+    .collapse {
+      display: flex;
+      flex-direction: row;
+      justify-content: left; /*POUR ALIGNE LA NAVBAR A DROITE  RIGHT OU LEFT*//*
+      height: 50px;
+      width: auto;/*100%*//*auto*//*
+      padding: 0px;
+     
+      border: 1px solid orange;
+      align-items: center;
+    }*/
+  
+
+
+                                                                                   /*
+  .navbar-toggler {
+    /*margin: 10px 0px 10px 10px;  */                                                            /*modifier maintenant*/  /*
+    margin: 10px 0px 10px 0px; 
+    /*10px-haut 0px-droite 10px-bas 10px-gauche */                                  /*
+    border-color: #3533cd;
+    justify-content: left; /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< TEST <<*/                     /*
+  }
+/*}*/
+/*@media screen and (min-width: 700px) and (max-width: 900px) {*//*
+  .nav-item {
+    margin: 5px;
+    width: 30%;
+    /*font-size: 25px;*//*
+  }
+}*/                                                                    /*
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<< TEST <<*/
+/*@media screen and (min-width: 701px) and (max-width: 1280px){*/                                            /*
+  @media screen and (min-width: 901px) and (max-width: 995px) {
+    .collapse {
+      /*visibility: hidden;*/                                                                            /*
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: right; /*POUR ALIGNE LA NAVBAR A DROITE  RIGHT OU LEFT*/  /*
+      height: 50px;
+      width: auto;/*100%*//*auto*/   /*
+      padding: 0px;
+      border: 1px solid orange;
+      align-items: center;*/                                                                            /*
+    }/*
+
+  .nav-item {
+    margin: 5px;
+    width: 30% !important;
+    /*font-size: 25px;*/
+    /*height: 50px !important;*/   /*
+  }
+}                                   */
+/*
+@media screen and (max-width: 900px) {
+.btn-group-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  height: auto;/*70px*/           /*  
+  width: 30%;
+  padding: 5px 5px 5px 5px;
+
+  border: 1px solid white;
+}*/
+ 
+/*ul,*/                                                     /*.navbar-nav {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  float: right !important;/*right*/
+  /*justify-content: left;*/                                                     /*
+  width: auto !important;/*100%*/                                                  /*
+  height: 50px; /*test modifier dans media-query  01/09/2023 */ /* indispensable pour le mode mobil et tablette */
+  /*align-items: right;/*a desactiver*/                                          /*
+  border: 2px solid green;
+}
+
+/*-------------------------------------------------------------------------*/
+
+ /*
+  .navbar {
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    /* background: #3533cd;*//*
+    height: 50px; /*50px*//*
+  } */
+                                                                    /*
+  .navbar {
+    /*display: flex;
+    /*float: left;*//*
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: left;*//*
+    width: 100%;
+    height: 50px;/*HAUTEUR DE LA NAVBAR*/ /*70px*//*
+    background: #d94350;/*#d97777*/                                     /*
+
+    display: flex;
+    /*float: right;*/                                                       /*
+    flex-direction: row;
+    align-items: center;
+    height: 50px;/*HAUTEUR DE LA NAVBAR*/ /*70px*/                            /*
+  }
+
+  .collapse {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: left; /*POUR ALIGNE LA NAVBAR A DROITE  RIGHT OU LEFT*/                    /*
+    height: 50px;
+    width: auto;/*100%*/                                                                          /*
+    padding: 0px;
+    border: 1px solid orange;
+    align-items: center;
+    border: none;
+  }
+
+  
+    .navbar-nav {/*
+      display: flex;
+      flex-direction: column;
+      float: left !important;/*right*//*
+      justify-content: left;
+      width: 100% !important;/*100%*//*
+      height: 50px;/*50px*/
+      /*align-items: right;/*a desactiver*//*
+    border: 2px solid green;*/                                                    /*
+      overflow: hidden; 
+      display: flex;
+      flex-direction: column;
+      /*float: left !important;/*right*/                                          /*
+      justify-content: left;
+      /*width: 100%*/;/*100%*/                                        /*
+      height: 50px;/*50px*/
+      /*align-items: right;/*a desactiver*/                                       /*
+      border: 2px solid green;
+      border: none;
+      background: none;
+      }
+    
+
+      .nav-item {
+        visibility: hidden;
+        overflow: hidden;
+        margin: 5px;
+        width: 160px;
+        font-size: 0.7em;
+      
+      }
+    
+    /* BOUTON NAVBAR */                                                 /*
+    .nav-link {
+      visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column; /*row*/                                         /*
+      align-items: center !important;
+      justify-content: center;
+      height: 34px !important;/*100%*/                                  /*
+      color: white !important;
+      width: 100%;/*250px*//*auto*/                                     /*
+      vertical-align: top;
+      margin-left: 20px;
+      border: none;
+      background: none;
+    }
+    /*--------------------------------------------------------------------------*/
+    /*
+    #navbarText {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+    }
+    */                                                                /*
+}
+

@@ -1,0 +1,1209 @@
+<!--=================================================== PAGE ACCUEIL ================================================-->
+<!-- Evaluation: Sujet Garage - ECF DWWM (1)-->
+<!--Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL-->
+<!--code passé au validator w3c--><!-- code valide: oui -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ECF v.parrot/Acceuil</title>
+  <!-- POUR ACTIVER LES MEDIA QUERIES -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Garage vincent Parrot vous propose des services auto pour votre vehicule">
+  <!-- POUR LE REFERENCEMENT SEO-->
+  <!--SEO: Garage vincent Parrot vous propose des services auto pour votre vehicule -->
+
+  <!-- RESSOURCES CDN -->
+  <link rel="stylesheet" href="./css/style-header.css" type="text/css">
+  <link rel="stylesheet" href="./css/style-acceuil.css" type="text/css">
+  <link rel="stylesheet" href="./css/style-footer.css" type="text/css">
+
+  <link rel="stylesheet" href="./media-queries/media-header.css" type="text/css">
+  <link rel="stylesheet" href="./media-queries/media-accueil.css" type="text/css">
+  <link rel="stylesheet" href="./media-queries/media-footer.css" type="text/css">
+  <!-- CSS CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"
+    type="text/css">
+
+  <!-- BIBLIOTHEQUE D'ICÔNES BOOTSTRAP COMPOSANT -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    type="text/css">
+
+  <!-- BIBLIOTHEQUE FONTAWESOME (mon code 64e89a7edd) pour utilisé les icones free fontawesome -->
+  <script src="https://kit.fontawesome.com/64e89a7edd.js" crossorigin="anonymous"></script>
+
+  <!--POLICES D'ECRITURE typographique-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" type="text/css">
+
+  <!-- OPTION BOUTON PARTAGER RESEAU SOCIAUX-->
+  <meta property="og:url" content="https://developers.facebook.com/docs/plugins/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Your Website Title">
+  <meta property="og:description" content="Your description">
+  <meta property="og:image" content="https://www.your-domain.com/path/image.jpg">
+
+
+  <!--=============================================== CAROUSEL BOOTSTRAP ==========================================-->
+  <!--
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+      type="text/css"
+    />-->
+  <!--=============================================================================================================-->
+</head>
+
+<body class="body">
+  <!--================================================================================================== CONTENEUR -->
+  <div class="content">
+    <!--=================================================================================================== TOPBAR -->
+    <nav class="topbar">
+      <!-- LOGO QUE J'AI FAIT SUR CANVA -->
+      <div class="img-logo-1 rounded-3">
+        <img src="./logo/Garage_v._parrot_(12).png" class="logo" alt="logo garage">
+      </div>
+
+      <div class="topbar-container">
+        <div class="btn-group">
+          <div class="btn-tel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon-telephone"
+              viewBox="0 0 16 16">
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+
+            <div itemscope>
+              <span itemprop="telephone">
+                <a href="tel:+33635777093" class="link-nav text-center m-2 text-decoration-none">06.00.00.00.00</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-group">
+          <div class="btn-tel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+            </svg>
+
+            <span>
+              <a href="./pages/form-index.html" title="Nous contacter" class="link-nav m-2 text-decoration-none">
+                Nous contacter</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--=================================================================================================== NAVBAR -->
+    <div class="Navbar">
+
+      <div class="Navbar__Link Navbar__Link-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <nav class="Navbar__Items Navbar__Items--right">
+        <div class="Navbar__Link">
+          <a href="./acceuil.html" title="Acceuil" class="nav-link">Accueil</a>
+        </div>
+      </nav>
+      <nav class="Navbar__Items">
+        <div class="Navbar__Link">
+          <a class="nav-link" href="./pages/galerie-index.html" title="nous trouver">Nos occasions</a>
+        </div>
+
+        <div class="Navbar__Link">
+
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              data-bs-auto-close="true" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <!-- HYPERLIEN VERS prestation > block-s -->
+            <!-- source: https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks (lien relatif a une ancre html mdn) fragment de document-->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./pages/actu-index.html#index-1">Réparation</a>
+              <a class="dropdown-item" href="./pages/actu-index.html#index-2">Mécaniques</a>
+              <a class="dropdown-item" href="./pages/actu-index.html#index-3">Carrosserie</a>
+              <a class="dropdown-item" href="./pages/actu-index.html#index-4">Entretien</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="Navbar__Link">
+          <a href="./pages/contact-index.html" title="Acceuil" class="nav-link">Nous trouver</a>
+        </div>
+
+        <!--========================================================================================= SE CONNECTER -->
+        <div class="Navbar__Link">
+          <a class="nav-link" href="./pages/admin-form-index.html">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512" width="16" height="16" aria-hidden="true"
+              fill="currentColor" class="bi bi-unlock-fill">
+              <path
+                d="M423 638H-9c-13.807 0-25-11.193-25-25 0-53.438 17.131-104.058 49.542-146.388 22.2-28.994 50.961-52.656 83.376-69.006C75.53 371.377 62 337.07 62 301c0-79.953 65.047-145 145-145s145 65.047 145 145c0 36.07-13.53 70.377-36.918 96.606 32.416 16.349 61.177 40.012 83.376 69.005C430.869 508.942 448 559.562 448 613c0 13.807-11.193 25-25 25zM17.657 588h378.687c-9.908-74.383-63.38-137.724-136.792-158.682a25 25 0 0 1-5.533-45.75C283.615 366.669 302 335.03 302 301c0-52.383-42.617-95-95-95s-95 42.617-95 95c0 34.03 18.386 65.668 47.981 82.568a25.003 25.003 0 0 1 12.423 24.712 25.003 25.003 0 0 1-17.956 21.038C81.037 450.276 27.564 513.617 17.657 588z">
+              </path>
+            </svg>
+          </a>
+        </div>
+
+        <!--- TEST LOGO ADMIN V-02 --><!--
+              <div class="Navbar-Link1">
+                <a class="nav-link-test" href="./pages/admin-form-index.html">  
+              
+              <svg class="bi bi-person-fill" width="16px" height="16px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+              </svg>
+              </a>
+              </div>
+                <style>
+                  .nav-link-test {
+                    border-radius: 50%;
+                    width: 25px;
+                    height: 25px;
+                    background-color: grey;
+                    display: flex;
+                    flex-direction: column; 
+                    align-items: center;
+                    justify-content: center;
+                  }
+                  .bi-person-fill {
+                    width: 16px;
+                    height: 16px;
+                    padding: 0px;
+                  }
+                </style>-->
+
+      </nav>
+    </div>
+  </div><!-- balise fermante de content -->
+
+  <!--==================================================================================================== BANDEAU -->
+  <div class="block-img">
+    <img src="./images/Wolff_Steuerungstechnik_(3).jpg" class="bandeau" width="1440" height="222" alt="image garage">
+  </div>
+
+  <!--=========================================================================================== IMAGE ADAPTATIVE -->
+  <!--
+        <img srcset="./images2/mon-image-S.jpg 300w,
+        ./images2/mon-image-M.jpg 1024w,
+        ./images2/mon-image-L.jpg 1920w"
+        sizes="(max-width: 340px) 300px,
+        (max-width: 1260px) 1000px,
+        1920px"class="card-img-top rounded-3 "
+        src="./images2/chad-kirchoff-xe-e69j6-Ds-unsplash (1).jpg" alt="image garagiste" />
+      -->
+
+  <!--============================================================================================== SECTION-TITLE -->
+  <div class="section-title">
+    <h1 class="title-acceuil">Garage Parrot</h1>
+
+  </div>
+
+  <!--============================================================================================= BOUTON CONNECT -->
+  <!--
+    <div class="section-connect" aria-label="">
+      <a href="./pages/form-index.html" class="connect"
+        >Nous Contacter</a
+      >
+    </div>-->
+
+  <!--MAIN-->
+  <div class="main">
+
+    <!--============================================================================================= FIL D'ARIANE -->
+    <nav aria-label="Breadcrumb" class="breadcrumb-item">
+      <!--<a href="./Sommaire-index.html" class="link-rep">Sommaire</a> >--> Accueil
+      > Garage
+    </nav>
+
+    <!-- ARTICLE TITLE --><!--
+      <div class="content-article">
+      <article class="article-first d-flex flex-column text-center mb-0">
+        <h2 class="sub-title-h1">Choisissez nous !</h2>
+      <h3 class="sub-title-h1">Vous rechercher un véhicules !</h3>
+        <div class="section-article">
+          <div class="article-A">
+            <p class="art-1">
+              NOUS VOUS OFFRONS TOUTE UNE GAMME DE VEHICULES<br />
+              BERLINE COMPACTE TOUT NOS VEHICULE SONT REVISE CERTIFIER CONSTRUCTEUR<br />
+              Notre garage à votre écoute
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>-->
+    <!-- fin d'article -->
+
+    <!--============================================ CAROUSEL BOUTSTRAP 3 =========================================-->
+    <!-- Source: https://getbootstrap.com/docs/5.3/components/carousel/ --><!--
+      <div class="content-carousel">
+        <div class="section-carousel">  -->
+    <!-- INDICATEURS --> <!--
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="2"
+              ></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="./Ressource/galerie-index-v-bis.html">
+                  <img
+                    class="d-block"
+                    src="./images/Capture_d’écran_compresser_2023-06-29_163534_(1)_(1).jpg"
+                    alt="First slide"
+                    title="carousel"
+                  />
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="A">First slide label</h5>
+                  <p>
+                    
+                    Visiter notre site pour voir nos offres
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+              
+                <img
+                  class="d-block"
+                  src="./images/img_compresser_pexels-ionuț-murariu-10678139_(1)_(1).jpg"
+                  alt="Second slide"
+                  title="carousel"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="A">Second slide label</h5>
+                  <p>
+                  
+                    cliquer sur l'image
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                
+                <img
+                  class="d-block"
+                  src="./images/Capture_d’écran_compresser_2023-06-29_163534_(1)_(1).jpg"
+                  alt="Third slide"
+                  title="carousel"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="A">Third slide label</h5>
+                  <p>
+                    
+                    cliquer sur l'image
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="">Voir les ocasions ! cliquer sur l'image</div>   -->
+
+    <!-- CONTROL PREV ET NEXT --> <!--
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="btn-group-grid">
+          <a
+            href="./pages/Galerie-index.html"
+            class="link-btn-grid text-white text-decoration-none"
+            title="occasions"
+            >
+            Voir plus !
+          </a>
+        </div>    
+      </div>-->
+
+    <!-- ARTICLE TITLE -->
+    <div class="content-article">
+      <article class="article-first d-flex flex-column text-center mb-0">
+        <!--article-second d-flex flex-column text-center mb-0-->
+        <h2 class="title-h2">Choisissez nous !</h2><!--sub-title-h1-->
+        <h3 class="sub-title-h3">Et découvrez nos Prestations</h3><!--sub-title-h1-->
+        <div class="section-article">
+          <div class="img-article">
+            <!--http://fakeimg.pl/350x200/?text=Paulund-->
+            <!--
+          <img
+            src="https://picsum.photos/250/150?random=2"
+            class="img-expo rounded-3"
+            alt="images"
+          /> -->
+          </div>
+
+          <div class="article-A">
+            <p class="art-1">
+              NOUS VOUS OFFRONS UNE LARGE GAMME DE SERVICES<br>
+              FORT DE 15 ANS D'EXPERIENCES DANS LE DOMAINE AUTOMOBILE<br>
+              Notre garage à votre écoute pour votre véhicule.
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!--============================================================================================ BLOCK1-IMAGES -->
+    <div class="block1-cardimg">
+      <!-- SECTION IMAGE 1 -->
+      <div class="cardimg">
+        <figure>
+          <figcaption>
+            <img src="./images/Capture_d’écran_2023-06-29_163534_(1.0).jpg" class="card-img-top"
+              alt="images mecaniciens auto" title="reparations"><!--Opel_Corsa_Sport.jpg-->
+
+          </figcaption>
+        </figure>
+
+        <article class="article">
+          <h3 class="title-art">Ventes d'occasions</h3><!--Réparations-->
+          <div class="section-art">
+            <p class="art">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              qui.
+            </p>
+          </div>
+
+          <!-- OPTION BOUTON SIMPLE -->
+          <div class="btn-group-card">
+            <a href="./pages/galerie-index.html" class="link-btn text-white my-2 my-sm-0">En savoir
+              plus<!--Les prestations-->
+            </a>
+          </div>
+
+          <!--<div class="btn-group-card">
+              <div
+                class="link-btn text-white dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                en savoir plus
+              </div>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">électriques</a></li>
+                <li><a class="dropdown-item" href="#">mécaniques</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./Ressource/Reparations-index-(V-1.00b).html"
+                    >Prestations</a
+                  >
+                </li>
+              </ul>
+            </div>-->
+
+          <!--===================================Test--><!--
+            <div class="section-btn-2">
+              <a
+                href="./Ressource/prestations-index-v-bis.html"
+                class="link-btn text-white my-2 my-sm-0"
+                >visiter </a
+              >--> <!-- bg-primary  btn-outline-success  desactiver--> <!--
+            </div>-->
+          <!--===========================================-->
+
+        </article>
+        <!-- fin de article -->
+      </div>
+      <!-- fin de section-1 -->
+
+      <!-- SECTION IMAGE 2 -->
+      <div class="cardimg">
+        <figure>
+          <figcaption>
+            <img src="./images/gros-plan-processus-entretien-voiture.jpg" class="card-img-top w-250 h-150"
+              alt="images mecaniciens auto" title="mecaniques">
+            <!-- Taille 280px x 187px -->
+          </figcaption>
+        </figure>
+
+        <article class="article">
+          <h3 class="title-art">Carrosserie</h3><!--Mécaniques-->
+          <div class="section-art">
+            <p class="art">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              qui.
+            </p>
+          </div>
+
+          <!-- OPTION BOUTON SIMPLE -->
+          <div class="btn-group-card">
+            <a href="./pages/prestations-index.html" class="link-btn text-white my-2 my-sm-0">En savoir
+              plus<!--Les prestations-->
+            </a>
+          </div>
+
+          <!--<div class="btn-group-card">
+              <div
+                class="link-btn text-white dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                en savoir plus
+              </div>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Diagnostique</a></li>
+                <li><a class="dropdown-item" href="#">Distribution</a></li>
+                <li><a class="dropdown-item" href="#">Démarage allumage</a></li>
+                <li><a class="dropdown-item" href="#">Embrayage</a></li>
+                <li><a class="dropdown-item" href="#">Boite de vitesse</a></li>
+                <li><a class="dropdown-item" href="#">échapement</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./Ressource/prestations-index-v-bis.html#signet"
+                    >Prestations</a
+                  >
+                </li>
+              </ul>
+            </div>-->
+
+          <!--============================================= Test--><!--
+            <div class="section-btn-2">
+              <a
+                href="./Ressource/prestations-index-v-bis.html"
+                class="link-btn text-white my-2 my-sm-0"
+                >visiter </a
+              >--> <!-- bg-primary  btn-outline-success  desactiver--> <!--
+            </div>-->
+          <!--===============================================-->
+
+        </article>
+      </div>
+      <!-- fin de cardimg -->
+    </div><!-- balise fermante block1-cardimg -->
+
+    <!-- SECTION IMAGE 3 -->
+    <div class="block1-cardimg">
+      <div class="cardimg">
+        <figure>
+          <figcaption>
+            <img src="./images/gros-plan-processus-entretien-voiture.jpg" class="card-img-top w-250 h-150"
+              alt="images Carrosserie auto" title="carosserie"><!-- Taille 280px x 187px -->
+          </figcaption>
+        </figure>
+
+        <article class="article">
+          <h3 class="title-art">Mécaniques</h3><!--Carosserie-->
+          <div class="section-art">
+            <p class="art">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              qui.
+            </p>
+          </div>
+          <!-- OPTION BOUTON SIMPLE --><!--btn-primary  btn-outline-success-->
+          <div class="btn-group-card"><!--homme-mecanicien-cliente-regardent-capot-voiture-discutent-reparations.jpg-->
+            <a href="./pages/prestations-index.html" class="link-btn text-white my-2 my-sm-0">En savoir
+              plus<!--Les prestations-->
+            </a>
+          </div>
+
+
+          <!--<div class="btn-group-card">
+              <div
+                class="link-btn text-white dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                en savoir plus
+              </div>
+    
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Peinture</a></li>
+                <li><a class="dropdown-item" href="#">Débosselage</a></li>
+                <li><a class="dropdown-item" href="#">Redressage</a></li>
+                <li><a class="dropdown-item" href="#">Renovation</a></li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="./Ressource/prestations-index-v-bis.html#signet"
+                    >Prestations</a
+                  >
+                </li>
+              </ul>
+            </div>-->
+
+          <!--=============================================== Test--><!--
+            <div class="section-btn-2">
+              <a
+                href="./Ressource/prestations-index-v-bis.html"
+                class="link-btn text-white my-2 my-sm-0"
+                >visiter </a
+              >--> <!-- bg-primary  btn-outline-success  desactiver--> <!--
+            </div>-->
+          <!--=========================================================-->
+
+        </article>
+      </div>
+      <!-- fin de section-1 -->
+
+      <!-- SECTION IMAGE 4 -->
+      <div class="cardimg">
+        <figure>
+          <figcaption>
+            <img src="./images/composition-mecanicien-automobile-moderne.jpg" class="card-img-top w-250 h-150"
+              alt="images Entretien auto" title="entretien"><!-- Taille 280px x 187px -->
+          </figcaption>
+        </figure>
+
+        <article class="article">
+
+          <h3 class="title-art">Entretien</h3>
+          <div class="section-art">
+            <p class="art">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              qui.
+            </p>
+          </div>
+
+          <!-- OPTION BOUTON SIMPLE -->
+          <div class="btn-group-card"><!--section-btn-->
+            <a href="./pages/prestations-index.html" class="link-btn text-white my-2 my-sm-0">En savoir
+              plus<!--Les prestations-->
+            </a>
+          </div>
+
+
+          <!--<div class="btn-group-card">
+              <div
+                class="link-btn btn-primary text-white dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                data-bs-auto-close="true"
+                aria-expanded="false"
+              >
+                en savoir plus
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./ressource/contact.html"
+                    >Acceuil</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Revision constructeur</a></li>
+
+                <li><a class="dropdown-item" href="#">Batterie</a></li>
+                <li><a class="dropdown-item" href="#">éclairage</a></li>
+                <li><a class="dropdown-item" href="#">Révision</a></li>
+                <li><a class="dropdown-item" href="#">Balai d'essui glace</a></li>
+                <li><a class="dropdown-item" href="#">Climatisation</a></li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../Ressource/prestations-index-v-bis.html"
+                    >Prestations</a
+                  >
+                </li>
+              </ul>
+            </div>-->
+
+          <!--=============================================== Test--><!--
+            <div class="section-btn-2">
+              <a
+                href="./Ressource/prestations-index-v-bis.html"
+                class="link-btn text-white my-2 my-sm-0"
+                >visiter </a
+              >--> <!-- bg-primary  btn-outline-success  desactiver--> <!--
+            </div>-->
+          <!--========================================================-->
+
+        </article>
+      </div>
+      <!-- fin de cardimg -->
+    </div>
+    <!--fin de block1-cardimg -->
+
+    <!--================================================================================================= CSS GRID -->
+    <article class="content-grid">
+      <h3 class="title-grid">Nos vehicules d'occasions</h3>
+
+      <div class="section-grid">
+        <div class="grid">
+          <div class="wrapper">
+
+            <div class="box1">
+              <!--<a href="./ressource/galerie-annonce.html#index-1">--><!-- HYPERLIEN VERS GALERIE IMAGE 1.B -->
+              <!-- source: https://developer.mozilla.org/fr/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks (lien relatif a une ancre html mdn) fragment de document-->
+              <!--<a href="#">--><!--./ressource/galerie-index-v-bis.html#index-1-->
+              <img src="./images-3/pexels-mike-bird-116675.jpg" alt="véhicule occasion" title="vehicule d'occasion"
+                class="card-img-grid d-flex rounded-3">
+
+            </div>
+
+            <div class="box2">
+              <img src="./images-3/pexels-mike-bird-7762716_(1).jpg" alt="image" title="vehicule d'occasion"
+                class="card-img-grid d-flex rounded-3">
+            </div>
+
+            <div class="box3">
+              <img src="./images-3/Capture_d’écran_2023-11-26_001135_(2).jpg" alt="image" title="vehicule d'occasion"
+                class="card-img-grid d-flex rounded-3">
+            </div>
+
+            <div class="box4">
+              <img src="./images-3/imagegrid-(4).svg" alt="image" title="vehicule d'occasion"
+                class="card-img-grid d-flex rounded-3">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="btn-group-grid">
+
+          <a href="./pages/Galerie-index.html" class="link-btn-grid text-white text-decoration-none" title="occasions">
+            Découvrir
+          </a>
+        </div>
+      </div>
+
+    </article>
+
+    <!--======================================= CAROUSEL FONDU ENCHAINE ===========================================-->
+
+    <div class="content-carousel-2">
+      <div class="section-carousel-2">
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--.../800x400?auto=yes&bg=777&fg=555&text=First slide-->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="content-Rating">
+                <div class="shareRating" data-id="44654">
+                  <div class="rating">
+
+                    <div class="my-profile-img">
+                      <div class="profile-pic-wrapper ">
+                        <img class="profile-pic" src="./images-2/profil1.jpg" alt="profile-pic">
+                      </div>
+                      <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                      </div>
+                    </div>
+
+                    <div class="notice">
+                      <p>
+                      </p>
+                      <div class="avis col p-0">
+                        <blockquote class="blockquote">
+                          <p class="art-rtn">Tres bon service, je recommande</p>
+
+                        </blockquote>
+
+                      </div>
+                      <div class="content-rating text-center justify-content-center text-dark">
+                        <div class="title-rating">
+
+                        </div>
+                        <div class="blockquote-footer text-center mt-2">Il y a 20 minutes</div>
+                      </div>
+                      <hr>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--=======================================================================================================-->
+            <div class="carousel-item">
+              <div class="content-Rating">
+                <div class="shareRating" data-id="44654">
+                  <div class="rating">
+
+                    <div class="my-profile-img">
+                      <div class="profile-pic-wrapper ">
+                        <img class="profile-pic" src="./images-2/profil2.jpg" alt="profile-pic">
+                      </div>
+
+                      <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                      </div>
+                    </div>
+
+
+                    <div class="notice">
+                      <p>
+                      </p>
+                      <div class="avis col p-0">
+                        <blockquote class="blockquote">
+                          <p class="art-rtn">Tres bon service, je recommande
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, molestiae?
+                          </p>
+
+                        </blockquote>
+
+                      </div>
+
+                      <div class="content-rating text-center justify-content-center text-dark">
+
+                        <div class="title-rating">
+
+                        </div>
+                        <div class="blockquote-footer text-center mt-2">Il y a 20 minutes</div>
+                      </div>
+                      <hr>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--=======================================================================================================-->
+            <div class="carousel-item">
+              <div class="content-Rating">
+                <div class="shareRating" data-id="44654">
+                  <div class="rating">
+
+                    <div class="my-profile-img">
+                      <div class="profile-pic-wrapper ">
+                        <img class="profile-pic" src="./images-2/profil3.jpg" alt="profile-pic">
+                      </div>
+                      <div class="profile-info">
+                        <h3 class="profile-name">John Doe</h3>
+                      </div>
+                    </div>
+                    <div class="notice">
+                      <p>
+                      </p>
+                      <div class="avis col p-0">
+                        <blockquote class="blockquote">
+                          <p class="art-rtn">Tres bon service, je recommande</p>
+                        </blockquote>
+
+                      </div>
+                      <div class="content-rating text-center justify-content-center text-dark">
+                        <div class="title-rating">
+
+                        </div>
+                        <div class="blockquote-footer text-center mt-2">Il y a 20 minutes</div>
+                      </div>
+                      <hr>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>-->
+      </div>
+    </div>
+    <!--===========================================================================================================-->
+    <div class="btn-rating">
+      <a href="./pages/temoignage-index.html" class="link-btn-Rating text-decoration-none text-white" title="avis">
+        Donnez un avis
+      </a>
+    </div>
+
+
+    <!--================================================= TEMOIGNAGES ===============================================-->
+    <div class="content-Rating-2">
+      <!--<div class="shareRating-2" >--><!--data-id="44654"-->
+      <div class="rating-avis-2 ">
+        <!--========================================================================================== TITRE NOTES -->
+        <div class="title-note">
+          <h4 class="title-rating-2">Votre votes sur les prestations</h4>
+        </div>
+        <!--======================================================================================== NOTES CLIENTS -->
+        <span class="span-grid-2 text-center justify-content-center text-dark"><!--span-->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" class="logo-rtn">
+            <path
+              d="M2 8.99997H5V21H2C1.44772 21 1 20.5523 1 20V9.99997C1 9.44769 1.44772 8.99997 2 8.99997ZM7.29289 7.70708L13.6934 1.30661C13.8693 1.13066 14.1479 1.11087 14.3469 1.26016L15.1995 1.8996C15.6842 2.26312 15.9026 2.88253 15.7531 3.46966L14.5998 7.99997H21C22.1046 7.99997 23 8.8954 23 9.99997V12.1043C23 12.3656 22.9488 12.6243 22.8494 12.8658L19.755 20.3807C19.6007 20.7554 19.2355 21 18.8303 21H8C7.44772 21 7 20.5523 7 20V8.41419C7 8.14897 7.10536 7.89462 7.29289 7.70708Z">
+            </path>
+          </svg>
+          Noté:
+          <strong class="strong"> 4.5/5 </strong>
+          par nos clients
+        </span>
+
+        <!--========================================================================================= BLOCK ETOILE -->
+        <div class="content-box-stars-2">
+          <div class="rating-box-stars-2">
+
+            <form action="#" method="post" id="star-rating" class="star-rating-2">
+              <input id="5-stars" name="rating" type="radio" value="5">
+              <label class="star-2" for="5-stars">&#9733;</label>
+
+              <input id="4-stars" name="rating" type="radio" value="4">
+              <label class="star-2" for="4-stars">&#9733;</label>
+
+              <input id="3-stars" name="rating" type="radio" value="3">
+              <label class="star-2" for="3-stars">&#9733;</label>
+
+              <input id="2-stars" name="rating" type="radio" value="2">
+              <label class="star-2" for="2-stars">&#9733;</label>
+
+              <input id="1-stars" name="rating" type="radio" value="1">
+              <label class="star-2" for="1-stars">&#9733;</label>
+            </form>
+
+            <hr>
+          </div>
+        </div>
+
+        <!--======================================================================================== CERTIFICATION -->
+
+        <div class="certif">
+          <span class="span-box-2"> Certifier </span>
+        </div>
+        <!--========================================================================================== BOUTON AVIS -->
+        <div class="rating-box-2">
+          <div class="link-btn-Rating-2 btn-primary">
+            <a href="./pages/temoignage-index.html#index5" class="btn-Rating text-decoration-none text-white"
+              title="avis">
+              Donnez un avis
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--================================================== FIN DE TEMOIGNAGES ===========================================-->
+
+  </div><!-- fin de main -->
+
+  <!--<div class="aside">-->
+  <!--</div>--><!--fin de aside-->
+
+  <!--===================================================================================================== FOOTER -->
+
+  <div class="content-footer">
+    <footer class="footer-header">
+
+      <div class="footer-body">
+        <!-- MENTIONS -->
+        <div class="footer d-flex flex-column">
+          <div class="footer-contact">
+            <h5 class="title-f">informations</h5>
+
+            <div class="contact-phone">
+              <a href="./obligations_légales/mentions_légales.html"
+                class="mention text-decoration-none">Mentions-légales</a>
+            </div>
+
+            <div class="contact-phone">
+              <a href="./obligations_légales/mentions_a-propos.html" class="mention text-decoration-none">A propos de ce
+                site</a>
+            </div>
+
+            <div class="contact-phone">
+              <a href="../obligations_légales/mentions_a-propos.html" class="mention">Cookies et confidentialité</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer d-flex flex-column ">
+          <div class="footer-contact ">
+            <h5 class="title-f text-white">nous contacter</h5><!--NOUS CONTACTER-->
+
+            <div class="contact-phone text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+              </svg>
+              <a href="tel:+336250214" class="contact text-center text-decoration-none">06.00.00.00.00</a>
+            </div>
+
+            <div class="contact-phone text-center">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at"
+                viewBox="0 0 16 16">
+                <path
+                  d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z" />
+              </svg>
+
+              <a href="mailto:v.parrot@example.com" class="contact text-decoration-none">Envoyer un courriel</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- balise fermante de footer -->
+
+        <!--==================================================================================================== 1 -->
+        <div class="footer d-flex flex-column">
+          <div class="footer-contact">
+            <h5 class="title-f">Societé</h5>
+            <div class="contact-phone">
+              <a href="#" class="mention text-decoration-none">Qui somme nous</a>
+            </div>
+
+          </div>
+        </div>
+        <!--=======================================================================================================-->
+
+      </div>
+      <!--fin de footer-body -->
+    </footer>
+    <!-- fin de footer-header -->
+
+    <!--LIGNE SEPARATRICE-->
+    <div class="content-ligne">
+      <div class="hr "></div>
+    </div>
+
+    <!-- CALANDRIER -->
+    <footer class="footer-table">
+      <div class="table-header">
+        <div class="tab-calendar">
+
+          <table>
+            <caption class="title-head-tab text-center text-white">
+              Horaires d'ouvertures
+            </caption>
+
+            <colgroup>
+              <!-- POUR FAIRE UN TABLEAU DE DEUX COLONNES -->
+              <col span="2">
+            </colgroup>
+
+            <tbody>
+              <tr>
+                <th>Lundi</th>
+                <td>08h45-12h00, 14h00-18h00</td>
+              </tr>
+
+              <tr>
+                <th>Mardi</th>
+                <td>08h45-12h00, 14h00-18h00</td>
+              </tr>
+
+              <tr>
+                <th>Mercredi</th>
+                <td>08h45-12h00, 14h00-18h00</td>
+              </tr>
+
+              <tr>
+                <th>Jeudi</th>
+                <td>08h45-12h00, 14h00-18h00</td>
+              </tr>
+
+              <tr>
+                <th>Vendredi</th>
+                <td>08h45-12h00, 14h00-18h00</td>
+              </tr>
+
+              <tr>
+                <th>Samedi</th>
+                <td>08h45-12h00</td>
+              </tr>
+
+              <tr>
+                <th>Dimanche</th>
+                <td class="sunday text-center">Fermé</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+
+        </div>
+        <!-- fin de tab-calandar -->
+      </div>
+      <!-- fin de table-header -->
+    </footer>
+    <!-- fin de footer-table -->
+
+    <!--LIGNE SEPARATRICE-->
+    <div class="content-ligne">
+      <div class="hr "></div>
+    </div>
+
+    <!-- OPTION RESEAU SOCIAUX-->
+    <div class="reseaux">
+      <div class="socials-reseaux">
+        <!-- conteneur reseau sociaux -->
+        <ul class="socials-icons">
+          <!-- mise en liste ordonnée reseau sociaux -->
+          <!--
+              <a href="http://www.facebook.fr">
+                  <i class="fab fa-facebook" title="facebook"></i>-->
+          <!-- nom de l'icone kit awesome -->
+          <!--
+              </a>  
+              <a href="http://www.linkedin.fr">
+                <i class="fab fa-linkedin" title="linkedin"></i>-->
+          <!-- nom de l'icone kit awesome -->
+          <!--
+              </a>  
+              <a href="http://www.twitter.fr"> -->
+          <!-- lien externe vers le site -->
+          <!--
+                  <i class="fab fa-twitter" title="twiter"></i>-->
+          <!-- nom de l'icone kit awesome -->
+          <!--
+              </a> 
+              <a href="http://www.instagram.com">
+                  <i class="fab fa-instagram" title="instagram"></i> -->
+          <!-- nom de l'icone kit awesome -->
+          <!--
+              </a>-->
+          <!-- nom de l'icone kit awesome -->
+
+          <!-- OPTION ANDROID APPLI --><!--
+            <a href="#">-->
+          <!--<i class="fa-brands fa-android" title="Android"></i>-->
+          <!-- nom de l'icone kit awesome -->
+          <!--
+              <i class="fa fa-android" style="font-size: 24px"></i>
+            </a>-->
+          <!-- nom de l'icone kit awesome -->
+          <!--<i class="fa-brands fa-android"></i>-->
+
+          <!-- OPTION BOUTON PARTAGER FACEBOOK-->
+          <!--js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";--><!--version anglo-americain-->
+          <!-- Load Facebook SDK for JavaScript -->
+          <!--
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            
+            js.src = "https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v3.0";
+            fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>-->
+
+          <!-- Your share button code --><!--Remplacez la valeur data-href par l’URL de votre site web--><!--data-href="https://www.your-domain.com/your-page.html" -->
+          <!--button_count--><!--box-count--><!--button--><!--https://developers.facebook.com/docs/plugins/-->
+          <!--
+            <div class="fb-share-button" 
+            data-href="https://developers.facebook.com/docs/plugins/" 
+            data-layout="button_count">
+            </div> -->
+
+          <!-- OPTION BOUTON PARTAGER LNKEDIN --><!--
+            <div class="fb-share-button">
+            <script async defer crossorigin="anonymous" 
+            src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v16.0" nonce="PqeEnSlY">
+            </script>-->
+          <!--
+            <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: fr_FR</script>-->
+          <!--en_US-->
+          <!--
+            <script type="IN/Share" data-url="https://www.linkedin.com"></script>-->
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- OPTION APPLICATION -->
+    <div class="icon-appli">
+      <a href="#">
+        <!-- nom de l'icone kit awesome -->
+        <i class="fa fa-android" style="font-size: 24px"></i>
+      </a>
+      <!-- nom de l'icone kit awesome -->
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div id="copyrighting">
+      option: Copyright tout droit réservé<br>
+    </div>
+  </div>
+  <!-- balise fermante de content-footer -->
+
+  <!-- BOOTSTRAP -->
+
+  <!-- ajouter test -->
+  <!-- Fichiers Jasvascripts, positionné en fin de document pour optimiser les temps de chargement-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- POPPER BOOTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+  <!-- JS BOUTSTRAP -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+  <!-- DERNIERE VERSION -->
+
+  <!--============================================ BOOTSTRAP CAROUSEL TEST ========================================-->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS --><!--
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!--LIEN JAVASCRIPT-->
+  <script src="./js/script-header.js"></script>
+</body>
+
+</html>

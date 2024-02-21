@@ -1,0 +1,287 @@
+/*===================================================== PAGE CONTACT =================================================*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c--><!-- code valide: oui
+*/
+
+/* Resolution d'ecran */
+/* Desktop > 1024px*/
+/* Tablette > 600 et 1024 < (mode portrait)*/
+/* Mobile > 320 et 600 < (mode portrait)*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 700px) {/* and (min-width: 320px) and (max-width: 700px)   and (min-width: 300px) 320px  576px*/
+  /* 576 px */
+  .main-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+
+@media screen and (max-width: 700px) {/*  and (min-width: 300px) 320px 576px*/
+  .article-1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+  /*  
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      width: 60%;
+    }*/
+
+
+/*-------------------------------------------------------------------------------------------------- ARTICLE AJOUTER--*/
+
+@media screen and (max-width: 400px) {
+  /*.main-form,*/
+  .content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }
+  /*BLOCK-A-GAUCHE*/
+  .section-adress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */
+    padding: 10px;
+  }
+
+  /*BLOCK-A-DROITE*/
+  .block-map {
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .section-map {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+
+}
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+/*
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .article-2 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/*------------------------------------------------------------------------------------ PAGE FORM BLOCK: FORMMULAIRE --*//*
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }
+
+  /*------------------------------------------------------------------------------------------------- BLOCK CONTACT --*//*
+
+  .block-adress-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px 0px 50px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */                          /*
+    padding: 10px;
+  }
+
+  .coordonnees {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    height: 100%;
+    /*----------------------------------------*/                   /*
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /*background: lightcyan;*/                                /*
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .section-map {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    height: 100%;
+    /*----------------------------------------*/                  /*
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /*background: lightcyan;*/                                         /*
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+
+  .art {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .block-map {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .map {
+    height: 240px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0px 0px 30px 0px;
+  }
+}                                                                         */
+
+
+/*------------------------------------------------------------------------------------------------------------- 700PX */
+
+@media screen /*and (min-width: 320px)*/ and (max-width: 700px) {
+  .content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+  }
+  /*BLOCK-A-GAUCHE*/
+  .section-adress {/*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;*/
+    margin: 0px 0px 50px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */
+    padding: 10px;
+  }
+
+  .coordonnees {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    height: 100%;
+    /*-------------------------------*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    /*background: lightcyan;*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .article-2 {
+    /*background: lightcyan;*/
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /*280px*/
+    /*80px*/
+    margin-bottom: 20px;
+  }
+
+
+
+  /*BLOCK-A-DROITE*/
+  .block-map {/*
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;*/
+    /*margin: 0px 20px 0px 20px;/*20px*/
+    margin: 0px 0px 0px 0px;/*20px*/
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------- 900px --*/
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .text {
+    width: 70%;
+  }
+  /*BLOCK-A-GAUCHE*/
+  .section-adress {/*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;*/
+    margin: 0px 0px 25px 0px;
+    /* 0px-haut 0px-droite 50px-bas 0px-gauche */
+    padding: 10px;
+  }
+
+
+  /*BLOCK-A-DROITE*/
+  .block-map {/*
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 10px;*/
+    /*margin: 0px 20px 0px 20px;/*20px*/
+    margin: 0px 20px 0px 20px;/*20px*/
+  }
+}

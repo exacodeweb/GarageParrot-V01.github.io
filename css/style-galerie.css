@@ -1,0 +1,656 @@
+
+/*======================================================= PAGE GALERIE ===============================================*/
+/*@charset "UTF-8"; /*déterminer l'encodage d'une feuille de style.*/
+/*Evaluation: Sujet Garage - ECF DWWM (1)*/
+/*Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL*/
+/*code passé au validator w3c*//* oui*/
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.body {
+  background: #f2f2f2;
+
+  background-position: 100% 100%;
+  height: auto;
+
+  font-family: Arial, sans-serif;
+}
+
+button {
+  margin-top: 0px;
+}
+
+/*importé manuelement les fichiers typo*/
+/*source: https://www.apprendre-html-et-css.com/les_polices_de_caracteres.html*/
+/*https://fonts.google.com/specimen/Roboto+Slab*/ /*Generateur de typo*/
+/*https://www.fontsquirrel.com/*/ /*Generateur de typo*/
+/*https://www.alsacreations.com/article/lire/1741-Optimisez-vos-polices-web.html*/ /*a lire*/
+/*
+@font-face {
+  font-family: 'roboto_slab';
+  src: url('fonts/RobotoSlab-Light-webfont.eot'),
+     url('fonts/RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/RobotoSlab-Light-webfont.woff') format('woff'),
+       url('fonts/RobotoSlab-Light-webfont.woff2') format('woff2'),
+       url('fonts/RobotoSlab-Light-webfont.svg#robotoSlab_light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}*/
+
+/*------------------------------ TEST BOUTON RESET SLIDE ------------------------*/
+button[type=submit], button[type=reset] {
+  padding: 10px;
+  margin-top: 15px;
+  /* ajouter*/
+  display: flex;
+  /*display: column;*//*--------------------------------------------------------------------------------------test--*/
+  /*display: inline-block;*/
+  margin-bottom: 10px;
+  padding: 0px;/*10px*/
+
+}
+
+
+ .b-slide {/*.button-slider2*/
+  border: 1px solid rgb(94, 91, 91);
+  background-color: white;
+  color: black;
+  border-radius: 50px 50px;
+  padding: 0px;
+  font-size: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 16px;
+}
+
+ .b-slide:hover {/*.button-slider2:hover*/
+  background-color: tomato; /*tomato*/
+  color: white; /*white*/
+  font-size: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------------- CONTENT --*/
+/* CONTENEUR TOPBAR ET NAVBAR *//*
+.content {
+  width: 100%;
+  position: fixed;
+  vertical-align: top;
+  z-index: 2;
+  height: auto;
+
+  background: #3533cd;
+  background: #d9777f;
+}*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-color: #f2f2f2; /**/ /*rgb(211, 211, 211, 0.5)*/ /*lemonchiffon*/  
+  /*background: #fafafa;*/
+  border: 1px solid orangered;
+}
+
+/*--------------------------------------------------------------------------------------------------- TITRE ARTICLE --*/
+
+h2 {
+  color: #0000ff;
+  font-weight: 600;
+  font-size: 1.5em;
+  /*font-family: ;*/
+  width: 100%;
+}
+
+.sub-title-h2 {
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 30px;
+  height: auto;
+}
+
+/*-- ARTICLE --*/
+.article-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 100%; /*60%*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+/*----------------------------------------------------------------------------------------- CONTENEUR LOGO ENSEIGNE --*/
+
+.content-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.spec-btn {
+  width: 50px;
+  height: 50px;
+}
+button {
+  border: 1px solid gray;
+  width: 80px;
+  height: 50px;
+}
+button:hover {
+  background-color: lightcoral;
+  border: 1px solid blue;
+}
+
+/*==================================================== SLIDER V.1 ====================================================*/
+/*
+.content-slider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: center;
+}
+
+#content-slide {
+  margin: 0px 5px 0px 5px;
+} 
+
+.block-slider {
+  margin: 0px 5px 0px 5px;
+}
+
+.slider-content {
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+  rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;  */  /*source: https://getcssscan.com/css-box-shadow-examples*/    /*
+  background-color: #e6e6fa;
+  background: #ffff;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  margin-bottom: 0px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-slide {
+  width: 250px;
+  text-align: left;
+  margin-bottom: 15px;
+  vertical-align: top;
+}
+
+.rangeslider {
+  width: 250px;
+}
+
+input,
+#price-min {
+  width: 100%;
+}
+
+.section-ui {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.section-ui,
+.cursor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-size: 8px;
+}*/
+
+/*------------------- BOUTON REINITIALISE DE SLIDER -----------------*/  /*
+button > input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80;
+  height: 20;
+  border-radius: 50px 50px;
+}
+
+button {
+  border: none !important;
+}
+
+.button-slider {
+  /*border-radius: 5px;*/                  /*
+  border: 1px solid rgb(94, 91, 91);
+  background-color: white;
+  color: black;
+  border-radius: 50px 50px;
+  padding: 0px;
+}
+
+.button-slider {
+  border-radius: 5px;
+  border: 1px solid rgb(94, 91, 91);
+  background-color: white;
+  color: black;
+  border-radius: 50px 50px;
+  padding: 0px;
+  align-items: center;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80;
+  height: 20;
+  border-radius: 50px 50px;
+}
+
+input[type="reset"],
+input[type="submit"] {
+  height: 1rem;/*0.9rem*/            /*
+  width: 5rem;
+  padding: 0px;
+}
+
+.button-slider:hover {
+  background-color: tomato;
+  color: white;
+  font-size: 12px;
+}  */
+
+/*====================================================== CARDS IMAGE =================================================*/
+
+.section-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 100px;
+  justify-content: space-around; /*center*/ /* POUR ESPACE LES CARTE */
+  margin-left: 10px;
+  margin-right: 10px;
+  /*border: 1px solid green;*/
+  height: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/*.section-card {*/
+  /*section1*/
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  /*flex: 1 1 100px;*/
+  /*justify-content: space-around; /*center*/ /* POUR ESPACE LES CARTE */
+ /*margin-left: 10px;*/
+  /*margin-right: 10px;*/
+  /*border: 1px solid green;*/
+  /*height: auto;*/
+  /*margin-bottom: 50px;*/
+  /*margin-top: 20px;*/
+/*}*/
+
+.section-2 {
+  /*card-block1 */
+  display: flex;
+  flex-direction: column;
+  width: 260px; /* POUR REGLE LA LARGEUR DE LA CARTE */
+  height: auto;
+
+  background: #ffff; /*#e6e6fa*/
+  border: 0px solid grey;
+  margin: 10px;
+  border-radius: 15px 15px 15px 15px;
+  /*box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /*source: https://getcssscan.com/css-box-shadow-examples */
+
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; /*source: https://getcssscan.com/css-box-shadow-examples*/
+  border: 1px solid grey;
+}
+
+.figure {
+  margin: 0px 0px 0px 0px;
+}
+
+.card-img1 {
+  background-color: #abebc6;
+
+  height: auto; /*150px*/
+  width: auto; /* POUR REGLE LA LARGEUR DE L'IMAGE AU CONTENEUR PARENT */
+  /*font-size: 13.28px;*/
+  border-radius: 5px 5px 0px 0px;
+  /*border: 2px solid greenyellow;*/
+  padding: 0.063em;
+}
+/*https://developer.mozilla.org/fr/docs/Web/CSS/aspect-ratio*/
+/*https://developer.mozilla.org/fr/docs/Web/CSS/object-fit*/
+.card-img-top2 {
+  display: block;
+  background-color: #abebc6;
+  /*height: auto; */ /*150px*/
+  width: 100%; /*100%*/
+  aspect-ratio: 3/2; /* POUR ADAPTE LA RESOLUTION IMAGE AU ECRAN */
+  border-radius: 15px 15px 0px 0px;
+  border: 1px solid grey;
+  padding: 0px;
+
+  overflow: hidden;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.subsection {
+  width: 100%;
+}
+
+/*----------------------------------------------*/ /* modification */
+.card-type-vhc {
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%; /*100%*/ /*250px*/
+  margin-bottom: 0px; /*15*/
+  padding: 0px 0px 10px 0px;
+  /*padding: 5px;*/
+}
+
+.brands {
+  font-size: 1.063em;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  /*margin: 0px 0px 00px 0px; /*10px*/
+}
+
+.card-years,
+.card-energie,
+.card-km,
+.card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0px;
+  margin-left: 5px;
+}
+
+/*---------------------------------------------*/ /* modification */
+.bi-fuel-pump,
+.bi-road-km,
+.bi-calendar {
+  color: black;
+}
+
+.text-years {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-left: 10px;
+  /*text-align: left;*/
+}
+
+/*-----------------------------------------------*/ /* modification */
+.years {
+  margin: 0;
+  padding: 0;
+}
+
+.years,
+.energie,
+.km {
+  font-size: 12px;
+  color: black;
+  display: block;
+  text-align: left;
+  margin: 5px;
+  width: 100%;
+}
+
+/*------------------------------------------------*/
+.card-price-vhc/*,
+.card-type*/ {
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  height: auto;
+  /*background-origin: 1px solid red;*/
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  margin: 0px;
+  align-items: center;
+}
+/*-----------------------------------------------*/
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+}
+
+.button-card-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 25px;
+  border-radius: 50px 50px;
+ /* border: 1px solid blue;*/
+  text-decoration: none;
+  background: orange;
+  background: #9d777f;
+  background: #d9777f;
+  background: #d94350;
+  /*background: orange;*/
+  margin: 0px 0px 10px 0px;
+  color: white;
+}
+
+.button-card-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 25px;
+  border-radius: 50px 50px;
+  /*border: 1px solid blue;*/
+  text-decoration: none;
+  background: orange;
+  background: orange;
+  background: green;
+  background-color: #1B75D0;
+  margin: 0px 0px 10px 0px;
+  color: white;
+}
+
+.button-card-1:hover,
+.button-card-2:hover {
+  color: white;
+  font-size: 17px;
+  /*color: black;*/
+  font-size: 17px;
+  font-weight: 500;
+  /*border: 1px solid #abebc6;*/
+}
+
+.card-art {
+  /*<p>*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  margin-top: 0px;
+  margin-top: 0px; /*20px*/
+
+  margin-bottom: 0px;
+  padding: 0px;
+
+  text-align: center;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+.card-art {
+  width: 100%;
+  /*padding: 8px;*/
+  padding: 0px 15px 0px 15px!important;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/*-- ARTICLE --*/
+.article-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*----------------------------------------------------------------------------------------------- PARAGRAPHE ARTICLE--*/
+p {
+
+  height: 100%;
+  width: auto;
+  padding: 0px;
+
+}
+
+/*======= Typographie police d'ecritture =======*/
+/*
+p, .art {
+  /*font-weight: 600;*/
+/*font-size: 1.5em;*/
+/*font-family: ;*/
+/*line-height: 1.5em;*/
+/*letter-spacing: 0.1rem;*/
+/* word-spacing: 0.1rem;*/ /*
+}*/
+
+/*==============================================*/
+
+.art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 90%;
+}
+/*=<<<<<<<<<<<<<<<<<<<<<< TRES IMPORTANT PAS SUPRIME POUR REGLE TAILLE ET ESPACEMENT ICONE BANDEAU <<<<<<<<<<<<<<<<<<<*//*
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  word-spacing: 2px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*//*

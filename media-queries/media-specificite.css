@@ -1,0 +1,290 @@
+/*=================================================== PAGE SPECIFICITE ===============================================*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c, code valide: oui
+*/
+
+/*---------------------------------------------------------- TITRE ---------------------------------------------------*/
+@media screen and (min-width: 300px) and (max-width: 699px) {
+  .header-expo-file {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+
+  .section-img-expos {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100px;
+  }
+}
+/*-------------------------------------------------- PHOTO EXPO VEHICULE 2 -------------------------------------------*/
+@media screen and (min-width: 200px) {
+  .img-top-expo {
+    width: 22em;
+    height: 13.75em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img-top-expo {
+    width: 80%;
+    height: auto;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------------ GRID --*/
+
+@media screen and (max-width: 600px) {
+  .content-grid {
+    display: flex;
+    flex: 90%;
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+  }
+
+  .wrapper {
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  img > .box1,
+  img > .box2,
+  img > .box3,
+  img > .box4 {
+    background: #abebc6;
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex: 50%;
+    max-width: 50%;
+    align-content: center;
+    justify-content: center !important;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .gallery {
+    width: auto;
+    height: auto;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 11vw);
+    grid-gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+    width: auto;
+    height: auto;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 8vw);
+    grid-gap: 0.5rem; 
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------- Taille ecran --*/
+@media (min-width: 600px) {
+  .content-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .content-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*---------------------------------------------------------------------------------------------------- Taille ecran --*/
+@media (max-width: 600px) {
+  .block-cards {
+    width: 100%;
+  }
+  .content-cards{
+    max-width: 100%;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto !important;
+    padding: 0;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*<!------------------------------------------------ TABLEAU DATA VEHICULE ------------------------------------------>*/
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .content-data-2 {
+    width: 100%;
+  }
+
+  .data-tab {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-tab {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-tab {
+    width: 80%;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------- TABLE-DATA-2 --------------------------------------------------*/
+
+@media screen and (max-width: 400px) {
+  .data-2 {
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .data-2 {
+    width: 100%;
+  }
+
+  .data-2 {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-2 {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-2 {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .data-2 {
+    width: 100%;
+    margin: 5px;
+  }
+}
+
+/*----------------------------------------------------- Test CALANDAR OU ---------------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 992px) {
+  .content-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    width: 100%;
+  }
+
+  .data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid blue;
+    height: auto;
+
+    border-radius: 5px;
+
+    width: auto;
+    font-size: 0.5em;
+  }
+}
+
+/*------------------------------------------------------- TABLE DATA -------------------------------------------------*/
+@media (max-width: 600px) {
+  .content-data-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .data-tab {
+    width: 100%;
+    border: 1px solid blue;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .data-tab {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .data-tab {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .data-tab {
+    width: 80%;
+  }
+}
+
+/*------------------------------------------------------ TABLE LISTING -----------------------------------------------*/
+@media (max-width: 600px) {
+  .content-listing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .listing {
+    width: 100%;
+    border: 1px solid blue;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .listing {
+    width: 100%;
+  }
+
+  .listing {
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .listing {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1223px) {
+  .listing {
+    width: 80%;
+  }
+}

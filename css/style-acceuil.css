@@ -1,0 +1,954 @@
+/*======================================================= PAGE ACCEUIL ===============================================*/
+/*Evaluation: Sujet Garage - ECF DWWM (1)*/
+/*Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL*/
+/*code passé au validator w3c, code valide: oui*/
+
+
+/*---------------------------------------------------------------------------- BOUTON Lien CONTACTER acceuil > form --*/
+.section-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 380px;
+  z-index: 1;
+  margin-top: 10px;
+  text-decoration: none;
+  height: 35px;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 50px;
+  opacity: 1;
+}
+/*
+.connect:hover {
+  text-decoration: none;
+  color: #7dc95e;
+  color: greenyellow;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.link-btn:hover,
+.link-btn-grid:hover,
+.link-btn-Rating:hover,
+.link-btn-Rating-2:hover {
+  background-color: #d94350 !important;/*POUR LES BOUTONS AU SURVOL*/
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+/*--------------------------------------------------------------------------------- BOUTON DE LIEN ANCRE CARTE AVIS --*/
+.btn-group-card {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+/*-------------------------------------------------------------------------------- BOUTON DE LIEN ANCRE CARTE IMAGE --*/
+.link-btn,
+.link-btn-grid,
+.link-btn-Rating {
+  height: 30px;
+  width: 160px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d94350 !important;/*POUR LA COULEUR DES BOUTONS*/
+  border: 1px solid #d9777f !important;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------ BOUTON DE LIEN ANCRE GRILLE IMAGES --*/
+.btn-group-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;/* haut droite bas gauche */
+  width: 100%;
+}
+
+/*--------------------------------------------------------- TITRES ---------------------------------------------------*/
+
+/* TITRE ACCEUIL */
+h1 {
+  color: #0000ff;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+h2 {
+  /*color: #0000ff;*/
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+h5 {
+  display: flex;
+  color: white;
+}
+
+/*--------------------------------------------------------------------------------------------- BLOCK SECTION TITRE --*/
+/* TITRE ACCEUIL */
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+}
+
+/* TITRE ACCEUIL */
+.title-acceuil {
+  /*title en superposition*/
+  position: absolute;
+  top: 150px;/* POUR REGLE LA HAUTEUR DU TITRE */
+  z-index: 1;
+  height: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 65px;
+  font-weight: 595;
+  font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+  text-shadow: 4px 4px 4px blue;
+  color: white;
+  opacity: 1;
+}
+/* POUR LA COULEUR DES TITRES */
+.sub-title-h2,
+.title-art,
+.title-grid {
+  color: #d9777f;
+  text-align: center;
+}
+
+/* POUR LA CARTE AVIS */
+.title-rating,
+.title-star {
+  color: black;
+  text-align: center;
+  justify-content: center;
+}
+
+.title-art {
+  color: black;
+  text-align: center;/
+}
+
+/*FORM-CONTACT*/
+.title-h4 {
+  text-align: center;
+}
+
+/*FORM-CONTACT*/
+.title-map {
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+.path {
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------------------------------------------- CONTENER MAIN --*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.main {
+  background-color: #f2f2f2;
+}
+
+/*--------------------------------------------------------------------------------------------------- ARTICLE HEADER--*/
+.content-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*--------------------------------------------------------------------------------------------------- ARTICLE HEADER--*/
+.title-h2,
+.sub-title-h3,
+.title-grid {
+  color: #0000ff !important;
+}
+
+.title-h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: Verdana;
+}
+
+.sub-title-h3 {
+  font-size: 1.17em;
+  font-weight: 500;
+  letter-spacing: normal;
+  font-family: Verdana;
+}
+
+/*-----------------------------------------------------*/
+.content-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.article-first,
+.article-second {
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  width: 90%;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+/*-----------------------------------------------------*/
+.section-article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/*-- DOCS ACCEUIL: ARTICLE TITLE --*/
+.article-A {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  padding: 0px;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+.section-art {
+  display: flex;
+  justify-content: center;
+}
+
+.art {
+  width: 80%;
+  padding: 8px;
+  text-align: center;
+}
+
+.art-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+  color: black;
+}
+
+/*-------------------------------------------------------------------------------------------------------- ARTICLE  --*/
+.article-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  background-color: #d9777f;
+  border-radius: 15px;
+}
+
+.content-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section2-article {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0px;
+  height: auto;
+}
+
+.img-expo {
+  width: 150px;
+  height: auto;
+  background: lightgreen;
+}
+/*----------------------------------------------------------------------------------------------- PARAGRAPHE ARTICLE--*/
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  margin-top: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-align: justify;
+}
+
+.art-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------- CAROUSEL--*/
+
+.content-carousel-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.section-carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+  background: #ffff;
+  border-radius: 15px;
+}
+
+.d-block {
+  width: 100%;
+  height: 300px;
+}
+
+.A {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------- BLOCK1-CARD-IMG --*/
+.block1-cardimg {
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+/*-- DOCS ACCEUIL: CARD MG --*/
+.cardimg {
+  width: 35%;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; /*source: https://getcssscan.com/css-box-shadow-examples*/
+  margin-bottom: 0px;
+  background: #ffff;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/*--------------------------------------------*/ /* POUR CENTRE L'IMAGE */
+figure {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+figcaption {
+  display: flex;
+  width: 100%;
+}
+/*--------------------------------------------*/
+.card-img-top {
+  width: auto;
+  height: 100%;
+  background: lawngreen;
+  background: #7dc95e;
+  background-color: #abebc6;
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+/*-------------------------------------------------------------------------------------------------------- CSS GRID --*/
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  justify-content: center;
+}
+
+/*----------------------------------*/
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr 1fr;
+  gap: 10px 10px;
+}
+
+.wrapper {
+  /*.box-img*/
+  border: 4px solid white;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+.wrapper {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* grid container*/
+.box1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/*grid élément*/
+.box2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.box3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.box4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* si image en ligne desactiver arriere plan de couleur */
+.box1,
+.box2,
+.box3,
+.box4 {
+  background: #abebc6;
+  height: 150px;
+  width: 100%;
+
+  height:24.71169686985173vh;/*150px*/
+  height: auto;
+  object-fit: cover;
+}
+
+/*-------------------------------------*/
+.card-img-grid {
+  width: 100%;/*100%*/
+  height:auto;/*150px*//*24.71169686985173vh*/
+  object-fit: cover;
+
+  /*height: 150px;*/
+  border-radius: 3px;
+}
+/*------------------------------------*/
+
+/*-- BOUTON DE LIEN ANCRE CARTE GRILLE IMAGES --*/
+.link-btn-grid {
+  margin: 20px 0px 20px 0px;
+}
+
+/*------------------------------------------------------------------------------------ CAROUSSEL COMPOSANT NOTATION --*/
+.content-Rating {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rating {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  height: 23.75em;
+  width: 100%;
+  background-color: #ffff;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.my-profile-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PHOTO DE PROFIL*/
+.profile-pic {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.profile-name {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.avis {
+  height: 10.125em;
+  border: 1px solid grey;
+}
+
+blockquote {
+  height: auto;
+  width: 12.5em;
+  padding: 5px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.art-rtn {
+  height: auto;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.title-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo-rtn {
+  margin: 0px 5px 0px 0px;
+}
+
+/*-- BOUTON DE LIEN ANCRE CARTE AVIS --*/
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  background: none;
+  padding: 0px 0px 0px 0px;
+}
+
+.btn-rating {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+}
+
+/*-- BOUTON DE LIEN ANCRE CARTE AVIS --*/
+.link-btn-Rating {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.content-rating,
+.span-box {
+  /*.span-grid*/
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /*100%*/
+  word-spacing: 2px;
+}
+
+.span-box {
+  color: red;
+  font-family: "Tangerine", Arial, serif; /* Typo pour le Titre, et typo de substitution */
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/*--------------------------------------------------------------------------------------------- CONTENT-TEMOIGNAGES --*/
+.content-Rating-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  width: 100%; /*117.290625=375vw.33px*/
+}
+
+.rating-avis-2 {
+  display: flex;
+  flex-direction: row;
+  background: #ffff;
+  width: 100%;
+  height: auto; /*80px*/
+  justify-content: space-around;
+}
+
+.rating-avis-2 {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*-------------------------------------------*/
+.title-note {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center !important;
+  justify-content: center;
+  padding: 5px;
+}
+
+.title-rating-2 {
+  width: 100%;
+  margin: 0px;
+  font-size: 1em; /*10/16=0.625em*/
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*--------------------------------------*/
+.span-grid-2 {
+  width: auto;
+  /*margin: 5px;*/
+  padding: 5px;
+}
+
+.logo-rtn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/*-------------------------------------*/
+.rating-box-stars-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: 0px 0px 0px 0px;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5px;
+}
+
+strong {
+  margin: 5px;
+}
+
+.star-rating-2 {
+  width: auto;
+  margin-top: 0px !important;
+}
+
+.star-rating-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0.2em;
+  text-align: center;
+  width: 5em;
+}
+
+.star-2 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.star-rating-2 input {
+  display: none;
+}
+
+.star-rating-2 label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating-2 :checked ~ label {
+  color: #f90;
+}
+
+.star-rating-2 label:hover,
+.star-rating-2 label:hover ~ label {
+  color: #fc0;
+}
+/*-------------------------------------------*/
+.certif/*,
+  .span-box-2*/ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  padding: 5px;
+}
+/*--------------------------------------------*/
+.rating-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.link-btn-2,
+.link-btn-Rating-2 {
+  height: 30px;
+  width: 160px; /*150px*/
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d94350 !important; /*#d9777f*/
+  border: 1px solid #d94350 !important; /*#d9777f*/
+}
+
+/*----------------------------------------------------------------------------------------------------- TEMOIGNAGES --*/
+.content-Rating-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px;
+  width: 100%;
+}
+
+.rating-avis-2 {
+  display: flex;
+  flex-direction: row;
+  background: #ffff;
+  width: 100%;
+  height: auto; /*80px*/
+  justify-content: space-around;
+}
+
+.rating-avis-2 {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*----------------------------------------------------------------------------------------------------- TITRE NOTES --*/
+.title-note {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  text-align: center !important;
+  justify-content: center;
+  padding: 5px;
+}
+
+.title-rating-2 {
+  width: 100%;
+  margin: 0px;
+  font-size: 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/*--------------------------------------------------------------------------------------------------- NOTES CLIENTS --*/
+.span-grid-2 {
+  width: auto;
+  padding: 5px;
+}
+
+.logo-rtn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+/*---------------------------------------------------------------------------------------------------- BLOCK ETOILE --*/
+.rating-box-stars-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: 0px 0px 0px 0px;
+  border-radius: 5px;
+  height: 100%;
+  padding: 5px;
+}
+
+.strong {
+  margin: 5px;
+}
+
+.star-rating-2 {
+  width: auto;
+  margin-top: 0px !important;
+}
+
+.star-rating-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5em;
+  justify-content: space-around;
+  padding: 0.2em;
+  text-align: center;
+  width: 5em;
+}
+
+.star-2 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.star-rating-2 input {
+  display: none;
+}
+
+.star-rating-2 label {
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating-2 :checked ~ label {
+  color: #f90;
+}
+
+.star-rating-2 label:hover,
+.star-rating-2 label:hover ~ label {
+  color: #fc0;
+}
+
+/*----------------------------------------------------------------------------------------------------- BOUTON AVIS --*/
+.rating-box-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.link-btn-2,
+.link-btn-Rating-2 {
+  height: 30px;
+  width: 160px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d94350 !important;
+  border: 1px solid #d94350 !important;
+}

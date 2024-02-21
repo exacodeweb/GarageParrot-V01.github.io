@@ -1,0 +1,534 @@
+/*========================================================= HEADER ===================================================*/
+/*@charset "UTF-8"; /*déterminer l'encodage d'une feuille de style. XXXXXX*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c, code valide: oui
+*/
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.body {
+  background: #f1f1f1;
+  background-position: 100% 100%;
+  height: auto;
+  font-family: sans-serif;
+}
+
+button {
+  margin-top: 0px;
+}
+
+/*--------------------------------------------------------------------------------------- CONTENEUR TOPBAR ET NAVBAR--*/
+.content {
+  width: 100%;
+  position: fixed;
+  vertical-align: top;
+  z-index: 2;
+  height: auto;
+  /*background: #3533cd;*/
+  /*background: #d94350 !important;/*#97777f*/
+  /*border: 5px solid #262526;*//**/
+}
+
+/*========================================================== TOPBAR ==================================================*/
+
+.topbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  color: white;
+}
+
+/*------------------------------------------------------------------------------------------------------------ LOGO --*/
+
+.img-logo-1 {
+  display: flex;
+  width: auto;
+  /*opacity: 0.8;*/
+  align-items: center;
+  background: transparent;
+}
+
+.logo {
+  display: flex;
+  width: auto;
+  height: 70px;
+  /*opacity: 0.8;*/
+  align-items: center;
+  /*background: transparent;*/
+  /*border: 1px solid yellow;*/
+}
+
+/* FORME GEOMETRIQUE */ /*
+.logo {
+  border-top-right-radius: 150px 100px;
+}*/
+
+.img-logo-2 {
+  display: flex;
+  width: auto;
+  /*opacity: 0.8;*/
+  align-items: center;
+  background: transparent;
+  width: 70px;
+  height: 70px;
+}
+
+.logo-2 {
+  display: flex;
+  width: auto;
+  height: 70px;
+  /*opacity: 0.8;*/
+  align-items: center;
+  /*background: transparent;*/
+  /*border: 1px solid yellow;*/
+}
+
+/* FORME GEOMETRIQUE */ /*
+.logo {
+  border-top-right-radius: 150px 100px;
+}*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.topbar-container {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*------------------------------------------------------------------------------------------------------------ Test --*/
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70px;/*70px*/
+  width: 100%;
+  padding: 0px 10px 0px 10px;
+  padding: 0px 0px 0px 0px;
+  border: none;
+}
+
+.btn-tel {
+  padding: 0px;
+  padding: 0px;
+  color: white; /*POUR COULEUR LOGO TEL*/
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 70px;
+  width: auto;/*auto*/
+  border: none;
+}
+/*
+  .btn-nav-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+
+  }*/
+
+.btn {
+  padding: 0px;
+  margin: 10px 10px 10px 10px;
+
+  padding: 5px;
+  border: 1px solid white;
+  width: auto;
+  color: white;
+}
+                                                                                                                          /*
+.btn-toggle {
+  padding: 0px;
+  margin: 10px 10px 10px 10px;
+
+  padding: 5px;
+  border: 1px solid white;
+  width: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: red;*/
+  /*height: 50px;*/                                                                                                       /*
+}                                                                                                                         */
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+.link-nav {
+  color: white;
+  text-decoration: none;
+  top: 0px;
+  opacity: 1;
+  height: 100%;
+  width: auto;/*auto*/
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*------------------------------------------------------------------------------------------------- BOTTON CARD IMG --*/
+.btn-group-card {
+  height: 100%;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.link-btn {
+  height: 30px;/*30px*/
+  width: 160px;
+  border-radius: 50px;
+
+  text-align: center;
+  text-decoration: none;
+
+  margin-top: 50px;
+  margin-bottom: 10px;
+
+  align-items: center;
+}
+
+/*------------------------------------------------------------------------------------------------------------ NAVBAR */
+/* POUR PARAMETRE (COULEUR DU TOPBAR) */                          /*
+.navbar {
+  display: flex;
+  /*float: right;*/                                                /*
+  flex-direction: row;
+  align-items: center;
+  /*justify-content: left;*/                                   /*
+  width: 100%;
+  height: 50px;/*HAUTEUR DE LA NAVBAR*/ /*70px*/
+  /*background: linear-gradient(#d9777f, #5696df);*/
+  /*background: linear-gradient(#3533cd, #5696df);*/
+  /*background: #d94350;/*#d97777*/                                    /*
+}
+
+/*-------------------------------------------------------------------------------------------------- OPTION TOGGLER --*/
+/*
+.navbar-toggler-icon {
+  /*margin: 0px 0px 0px 10px;*//*
+  border: 1px solid #d94350 !important;/*                         /*
+/*}*/                                                          /*
+.navbar-toggler {
+  /* 2 */
+  /*margin: 10px 0px 10px 10px;  */                                                              /*modifier maintenant*/   /*
+  margin: 10px 0px 10px 0px; 
+  /*10px-haut 0px-droite 10px-bas 10px-gauche */
+  /*border-color: #3533cd;*/                                                      /*
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*
+.collapse {
+  display: flex;
+  flex-direction: row;
+  justify-content: left; /*POUR ALIGNE LA NAVBAR A DROITE  RIGHT OU LEFT*/              /*
+  height: 50px;
+  width: 100%;/*100%*/             /*
+  padding: 0px;
+  border: 1px solid orange;
+  align-items: center;
+}
+
+/*------------------------------------------------------------------------------------------------------ NAVBAR-NAV --*/
+                                            /*
+/*ul,*/                       /*.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  /*float: right !important;/*right*/
+  /*justify-content: left;*/                             /*
+  width: auto !important;/*100%*/                          /*
+  height: 50px; /*test modifier dans media-query  01/09/2023 */ /* indispensable pour le mode mobil et tablette */
+  /*align-items: right;/*a desactiver*/                    /*
+  border: 2px solid green;
+}
+
+/*--------------------------------------------------------------*//*
+.dropdown-menu,
+.dropdown-item {
+  margin-left: 0em;
+}
+
+.dropdown-item {
+  width: auto;
+}
+/*-------------------------------------------------------------*/
+
+/* POUR PARAMETRE (COULEUR DU NAVBAR) */                                  /*
+.nav-item {
+  display: flex;
+  flex-direction: column; /*ALIGNE LE TEXTE 'BOUTON TOGLE'*/                 /*
+  align-items: center;
+  /*margin: 0px 10px 10px 10px;*/
+  /*margin: 5px;*/
+  /*background: linear-gradient(#d9777f, #5696df);
+  background: linear-gradient(#3533cd, #5696df);*/
+  /*background: #d94350 !important;/**//*#d97777*/                                   /*
+  border-radius: 5px;/*
+  height: auto !important;/*100%*/ /*-- ! ATTENTION NE PLUS Y TOUCHER --*/                /*
+  width: auto;/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<< TEST<<<<<<<<<<*/
+ /*border: 1px solid white;*/                                                            /*
+ margin: 10px 0px 10px 0px;
+}
+
+/* BOUTON NAVBAR *//*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.nav-link, .nav-item {/*
+  position: relative;
+  display: flex;
+  flex-direction: row; /*row*/                   /*
+  align-items: center;
+ 
+  justify-content: center;
+  height: 100% !important;/*100%*//*50px*//*auto*/                
+  color: white !important;          text-decoration: none;                 /*
+  
+  width: 160px;/*250px*//*auto*//*130px*/
+  /*padding: 0px 10px 0px 10px;*/                      /*         
+  padding: 5px;
+  background: #d94350;
+  border-radius: 5px;
+  margin-left: 10px;                                */
+}
+
+/* POUR PARAMETRE (COULEUR DU NAVBAR) *//*
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #d94350;
+  border-radius: 5px;
+  height: 100% !important;
+  width: 130px;
+  border: 1px solid white;
+}
+
+.dropdown-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100% !important;
+  color: white !important;
+  width: 130px;
+  padding: 5px;
+}*/
+
+/*
+.admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white !important;
+
+*/
+
+/*
+  padding: 0px;
+  padding: 5px;
+  color: white; /*POUR COULEUR LOGO TEL*//*
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  height: 50px;
+  width: auto;
+  border: none;
+}*/
+
+.admin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.bi {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+.bi-user {
+ display: flex;
+ align-items: center;
+  color: white;
+}
+
+/*-------------------------------------------------------------------------------------------------- IMAGES BANDEAU --*/
+/* ! commun Tous les fichiers */
+.block-img {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: contain;
+  /*parametre: cover, fill*/
+ /* object-fit: cover;*/
+}
+
+.bandeau {
+  height: 350px;
+  width: 100%;
+  margin-top: 142px;/*150px*/
+}
+
+/*---------------------------------------------------------------------------------------------------- FIL D'ARIANE --*/
+.breadcrumb-item {
+  width: 100%;
+  background: none;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  /*rajouter en option*/
+  display: block;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.link-rep {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+/*------------------------------------------------------------------------------------- STYLE D'ARRIERE PLAN TOP-BAR--*/
+.link-rep:hover {
+  color: red !important;
+}
+
+.link-nav:hover,
+span:hover {
+  color: lightgreen;/*yellow*/
+  /*color: white;*/
+  /*background-color: #d9777f;/**//*lightgray*/
+  /*transition: 1s;*/
+}
+
+/* BOUTON NAVBAR */
+/*.nav-item:hover,*/.nav-link:hover, .bi:hover/*,
+.bi:hover*/ {
+  text-decoration: none;
+  color: lightgreen !important;/*yellow*/
+  /*background-color: #d9777f;/**//*lightgray*//*
+  border: 1px solid white;
+  border-radius: 5px;*/
+}
+/*
+.link-btn-Rating:hover {
+  background: #4caf50 !important;
+  color: white;
+}*/
+/*
+.btn:hover {
+  text-decoration: none;
+  color: lightgreen;
+  /*background crimson*//*
+  background: green;
+  transition: 1s;
+}*/
+/*
+.dropdown-item:hover {
+  /*width: auto;*//*
+  background: grey !important;
+}*/
+/*---------------------------------------------------------------------------------------------- STYLE ARRIERE PLAN --*/
+
+/*== TRES IMPORTANT PAS SUPRIME POUR REGLE TAILLE ICONE ==*/
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  word-spacing: 2px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+/*-- Test --*/
+.content,
+.Navbar,
+.nav-item,
+.topbar {
+  background: #d94350; /*#d9777f*//**//*#2ec4c6*/
+}
+/*====================================================================================================================*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.Navbar {
+  /*background-color: #d94350;/*#46ACC2*/
+  display: flex;
+  padding: 16px;/*16px*/
+  /*padding: 16px 16px 16px 16px;*/
+  font-family: sans-serif;
+  color: white;
+
+
+  /*height: 50px;*/
+}
+
+.Navbar__Link {
+  padding-right: 8px;/*8px*/
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Items--right {
+  margin-left:auto;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+    
+.Navbar__Items {
+    display:none;
+  }
+    
+.Navbar__Items--right {
+    margin-left:0;
+  }
+    
+.Navbar__ToggleShow {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+}

@@ -1,0 +1,430 @@
+/*======================================================= PAGE FORM ==================================================*/
+/*@charset "UTF-8"; /*déterminer l'encodage d'une feuille de style.*/
+/*
+ Evaluation: Sujet Garage - ECF DWWM (1)
+ Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL
+ code passé au validator w3c, code valide: oui
+*/
+
+/*--------------------------------------------------------------------------------------------------------- CONTENU --*/
+html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.body {
+  background: #f2f2f2;
+  background-position: 100% 100%;
+  height: auto;
+
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  background-color: #f2f2f2;
+}
+
+button {
+  margin-top: 0px;
+}
+
+/*importé manuelement les fichiers typo*/
+/*source: https://www.apprendre-html-et-css.com/les_polices_de_caracteres.html*/
+/*https://fonts.google.com/specimen/Roboto+Slab*/ /*Generateur de typo*/
+/*https://www.fontsquirrel.com/*/ /*Generateur de typo*/
+/*https://www.alsacreations.com/article/lire/1741-Optimisez-vos-polices-web.html*/ /*a lire*/
+/*
+@font-face {
+  font-family: 'roboto_slab';
+  src: url('fonts/RobotoSlab-Light-webfont.eot'),
+     url('fonts/RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/RobotoSlab-Light-webfont.woff') format('woff'),
+       url('fonts/RobotoSlab-Light-webfont.woff2') format('woff2'),
+       url('fonts/RobotoSlab-Light-webfont.svg#robotoSlab_light') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-stretch: normal;
+}*/
+
+/*--------------------------------------------------------------------------------------- CONTENER TOPBAR ET NAVBAR --*/
+/* CONTENEUR TOPBAR ET NAVBAR */
+.content {
+  width: 100%;
+  position: fixed;
+  vertical-align: top;
+  z-index: 2;
+  height: auto;
+
+  background: #3533cd;
+  background: #d9777f;
+}
+
+/*--------------------------------------------------------------------------------------------------- CONTENER MAIN --*/
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+/*-------------------------------------------------------------------------------------------------- TITRE ARTICLE ---*/
+
+h2 {
+  color: #0000ff;
+  font-weight: 600;
+  font-size: 1.5em;
+  /*font-family: ;*/
+}
+
+h3 {
+  color: #0000ff;
+}
+
+.sub-title-h2 {
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+}
+
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+
+.content-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%; /*90%*/
+  margin-bottom: 30px; /*30px*/
+}
+
+/*-- ARTICLE --*/
+.article-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: auto;
+  width: 60%;
+  margin-top: 10px; /*100px*/
+  margin-bottom: 10px; /*20px*/
+}
+
+/*-------------------------------------------------------------------------------------------- BOUTON DE LIEN ANCRE --*/
+/*
+.link-btn-grid {
+  height: 30px;
+  width: 160px; /*150px*//*
+  border-radius: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d94350 !important; /*#d9777f*/ /*#d9777f*/ /*POUR LA COULEUR DES BOUTONS*//*
+  border: 1px solid #d9777f !important;
+  color: white;
+}
+
+
+
+.btn-group-grid {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0px 35px 0px;
+  width: 100%;
+}
+
+/*-- BOUTON DE LIEN ANCRE CARTE GRILLE IMAGES --*//*
+.link-btn-grid {
+  margin-top: 20px; /*20px*/ /*40px*//*
+  margin-bottom: 25px;
+}*/
+
+/*----------------------------------------------------------------------------------------------- PARAGRAPHE ARTICLE--*/
+
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: auto;
+
+  margin-top: 0px;
+  margin-top: 20px;
+
+  margin-bottom: 0px;
+  padding: 0px;
+
+  text-align: justify;
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+}
+
+.art {
+  width: 100%;
+  padding: 8px; /*5px*/
+  /*font-weight: 600;*/
+  /*font-size: 1.5em;*/
+  /*font-family: ;*/
+  /*line-height: 1.5em;*/
+  /*letter-spacing: 0.1rem;*/
+  /* word-spacing: 0.1rem;*/
+}
+
+/*----------------------------------------------------------------------------------------------------------- TITRE --*/
+.title-form {
+  text-align: center;
+  margin: 40px 0px 20px 0px;
+  /*-- 0px-haut 0px-droite 50px-bas 0px-gauche --*/
+  padding: 10px;
+  width: 100%;
+}
+
+/*-------------------------------------------------------------------------------------------- CONTENER ADRESS-FORM --*/
+.content-adress {
+  /**/
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*space-around*/ /*center*/
+  height: auto; /*auto*/ /* POUR ADAPTE LA HAUTEUR */
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+/*------------------------------------------------------------------------------------------- BLOCK FORM COORDONEES --*/
+.section-form {/*BLOCK-A-GAUCHE*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center*/
+  height: 300px; /*auto*/
+  width: 400px; /*400px*/
+  margin: 0px 50px 0px 0px;
+  /*-- 0px-haut 0px-droite 50px-bas 0px-gauche --*/
+  padding: 10px;
+  background-color: #e6e6fa;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.title-h4 {
+  text-align: center;
+}
+
+.coordonnees {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  height: 350px; /*auto*/
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  margin-top: 0px; /*100px*/
+  margin-bottom: 0px; /*20px*/
+}
+
+.article-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: auto;
+  width: 100%; /*60% rectifier a 100%*/
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+
+  /* OPTION */
+  /*background-color: aqua;*/ /*
+  background-color: azure;
+  border: 1px solid grey;
+  border-radius: 5px;*/
+}
+
+/*---------------------------------------------------------------------------------------- BLOCK FORMULAIRE CONTACT --*/
+.content-form-3 {/*BLOCK-A-DROITE*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: auto; /*auto*/
+  width: 400px; /*400px*/
+
+  border: 1px solid grey;
+  border-radius: 5px;
+
+
+  /*
+  padding: 10px;
+  margin: 0px 0px 0px 50px;/*20px*//*
+  margin-top: 0px;
+  background-color: #e6e6fa;*/
+
+  /*-- 0px-haut 0px-droite 50px-bas 0px-gauche --*/  
+}
+
+.section-3 {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  width: 100%; /*450px*/
+
+  margin: 0px 0px 0px 0px;
+  margin-top: 0px; /*100px*/
+  margin-bottom: 0px; /*20px*/
+
+  border-radius: 5px;
+  background-color:#e6e6fa;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /*align-items: left; /*center*/
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: auto;
+  width: 90%;
+}
+
+label,
+.e-mail {
+  text-align: left;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*margin-bottom: 10px;*/
+  margin-top: 10px;
+  text-align: left;
+}
+
+input {
+  height: 35px;
+  text-align: left;
+  width: 80%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 50%;
+}
+
+textarea {
+  /* message */
+  height: 25px;
+  text-align: left;
+  width: 80%;
+}
+
+#message {
+  /*height: 30px;*/
+  height: auto;
+}
+
+/*------------------------------------------------------------------------ BOUTON: ADMIN-FORM et ADMIN-FORM VERSION-2 */
+.click {
+  /*button*/
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px; /*15px*/
+  margin-bottom: 20px;
+  padding: 10px; /*10px*/
+
+  width: 160px;
+  height: 30px;
+
+  background: #d94350; /*blue*/ /*#0d6efd*/ /*#0000ff*/
+  /*border: 1px solid black;*/
+  border: none;
+  border-radius: 50px;
+  color: white;
+
+  cursor: pointer;
+}
+
+/* BOUTON: ADMIN-FORM et ADMIN-FORM VERSION-2 */
+.click:hover {
+  background: #d94350; /*green*/
+  font-size: 18px;
+  font-weight: 500;
+
+  /*
+  box-shadow: 0 4px #d21e2d;
+  top: 2px;*/
+  /*background: linear-gradient(to left, #606c88, #3f4c6b);*/
+}
+/*--------------------------------------------------------------------------------*/
+label {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  justify-content: left;
+}
+form {
+  padding: 10px;
+}
+button > .click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+/*=<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< TRES IMPORTANT PAS SUPRIME POUR REGLE TAILLE ICONE <<<<<<<<<<<<<<<<<<<<<<<<<<*//*
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  word-spacing: 2px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/

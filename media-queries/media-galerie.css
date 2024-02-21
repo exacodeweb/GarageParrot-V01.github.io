@@ -1,0 +1,443 @@
+/*====================================================== PAGE GALERIE ================================================*/
+/*Evaluation: Sujet Garage - ECF DWWM (1)*/
+/*Giet FRANCK Graduate Développeur PHP/Symfony Promo BECQUEREL*/
+/*code passé au validator w3c*//* oui*/
+
+/* Resolution d'ecran */
+/* Desktop > 1024px*/
+/* Tablette > 600 et 1024 < (mode portrait)*/
+/* Mobile > 320 et 600 < (mode portrait)*/
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*ciblent les écrans de largeur supérieure ou égale à 320px (min-width)*/
+/*ciblent les écrans de largeur inférieure ou egale à 700 pixels (max-width*)*/
+/*981 1200*/
+/*760 1300*/
+
+
+/*-- ! commun page admin form, page galerie-annonce --*/
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0px;
+  }
+}
+
+/*==================================================== SLIDER RANGE ==================================================*/
+/*----------------------------------------------------------------------------------------- POUR LES ECRANS DESKTOP --*/
+/*---------------------------------------------------------------------------------------------------------- 1200px --*/
+@media screen and (min-width: 901px)/* and (min-width: 1201px) */{/*and (max-width: 1200px)*/
+  .block-slider {
+    margin: 0px 5px 0px 5px;
+  }
+
+  .content-slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .slider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+
+  .slider-content {
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/*------------------------------------------------------------------------------------------- POUR LES ECRAN MOBILE --*/
+/*----------------------------------------------------------------------------------------------------------- 400px --*/
+@media screen and (max-width: 400px) {
+  .content-slider {
+    width: auto;
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .slider {
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: 0px 5px 0px 5px;
+  }
+
+  .block-slider {
+    margin: 10px;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------- 700px --*/
+@media screen and (max-width: 700px) {
+  .content-slider {
+    width: auto;
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .slider {
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: 0px 5px 0px 5px;
+    justify-content: center;
+  }
+
+  .block-slider {
+    margin: 10px;
+  }
+
+  #content-slide, #content-slide-2, #content-slide-3 {
+    margin-top: 10px;
+  }
+
+}
+/*----------------------------------------------------------------------------------------------------------- 900px --*/
+@media screen and (max-width: 900px) {
+  .content-slider {
+    width: auto;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slider {
+    display: inline-block;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+    margin: 0px 5px 0px 5px;
+    justify-content: center;
+  }
+
+  .block-slider {
+    margin: 10px;
+  }
+
+  #content-slide, #content-slide-2, #content-slide-3 {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .subcontent-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 5px;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+  }
+
+  .block2-img {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-bottom: 50px;
+    border: 1px solid red;
+    padding: 10px;
+  }
+/*
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 5px;
+    height: auto;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: #ffff;
+  }
+
+  .card-img-top2 {
+    display: block;
+    width: 350px;
+    height: auto;
+  }
+  .subsection {
+    width: 100%;
+  }*/
+}
+
+@media screen and (min-width: 300px) and (max-width: 599px) {
+  .content-cardimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+/*
+  .section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 5px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: #ffff;
+    border-radius: 15px;
+  }*/
+}
+@media screen and (min-width: 600px) and (max-width: 899px) {
+  .content-cardimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+/*
+  .section-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 5px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: #ffff;
+    border-radius: 15px;
+  }*/
+}
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .content-cardimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+  }
+/*
+  .section-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: 5px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+      rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    background-color: #ffff;
+    border-radius: 15px;
+  }*/
+}
+
+/*---------------------------------------------------------------------------------------- POUR LES ECRANS TABLETTE --*/
+
+@media screen and (max-width: 700px) {
+  .card-block1-vhc {
+    width: auto;
+  }
+}
+/*------------------------------------------------------------------------------------------------- POUR LES ECRANS --*/
+@media screen and (max-width: 900px) {
+  .card-block1-vhc {
+    width: auto;
+  }
+}
+/*------------------------------------------------------------------------------------------------- POUR LES ECRANS --*/
+@media screen and (max-width: 1200px) {
+  .card-block1-vhc {
+    width: auto;
+  }
+}
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .article-1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+/*======================================================== TEST ======================================================*/
+/*-- ARTICLE --*/
+@media screen and (max-width: 400px) {
+  .article-1 {
+    width: 90%;
+  }
+}
+
+/*---------------------------------------------------------------------------------------- POUR LES ECRANS TABLETTE --*/
+
+@media screen and (max-width: 700px) {
+  .card-block1-vhc {
+    width: auto;
+  }
+}
+/*------------------------------------------------------------------------------------------------- POUR LES ECRANS --*/
+@media screen and (max-width: 900px) {
+  .card-block1-vhc {
+    width: auto;
+  }
+}
+/*------------------------------------------------------------------------------------------------- POUR LES ECRANS --*/
+@media screen and (max-width: 1200px) {
+  .card-block1-vhc {
+    width: auto;
+  }
+}
+
+/*--------------------------------------------------------------------------------------------------------- ARTICLE --*/
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .article {
+    background: lightcyan;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+/*------------------------------------------------------------------------------------------------------ CARD IMAGE --*/
+
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .section-2,/* utilisé *//* REGLE LA LARGEUR EN MODE MOBILE */
+  .card-block2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    /*border-radius: 15px 15px 15px 15px;*/
+  }
+
+  .card-img1,/* utilisé */
+  .card-img2 {
+    background-color: #abebc6;
+    color: black;
+    font: italic smaller sans-serif;
+    text-align: center;
+    height: 150px;
+
+    width: 100%;
+    font-size: 13.28px;
+    border-radius: 5px 5px 0px 0px;
+    /*border: 1px solid blue;*/
+  }
+
+  .card-article1,/* utilisé */
+  .card-article2 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: justify;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-img-top-2 {
+    /* utilisé */
+    display: block;
+    background-color: #abebc6;
+    height: auto; /*150px*/
+    width: 100%;
+  }
+
+  .card-details {
+    /* utilisé */ /* POUR LES BOUTONS DE NAVIGATION INTERNE */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .button-card {
+    /* utilisé */ /* button-card1 et button-card-2 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 25px;
+    border-radius: 50px 50px;
+    border: 1px solid blue;
+    text-decoration: none;
+    background: orange;
+
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-img1 {
+    /* utilisé */
+    display: block;
+    background-color: #abebc6;
+    height: auto; /*150px*/
+    width: 100%;
+  }
+}
